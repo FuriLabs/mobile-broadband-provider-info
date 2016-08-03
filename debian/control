@@ -10,6 +10,7 @@ Homepage: https://wiki.gnome.org/Projects/NetworkManager/MobileBroadband/Service
 
 Package: mobile-broadband-provider-info
 Architecture: all
+Multi-Arch: foreign
 Depends: ${misc:Depends}
 Description: database of mobile broadband service providers
  This package contains a database of provider-specific settings of mobile
