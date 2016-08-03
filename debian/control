@@ -1,0 +1,18 @@
+Source: mobile-broadband-provider-info
+Section: admin
+Priority: optional
+Maintainer: Bhavani Shankar <bhavi@ubuntu.com>
+Uploaders: Mathieu Trudel-Lapierre <mathieu-tl@ubuntu.com>,
+           Antti Kaijanmäki <antti.kaijanmaki@canonical.com>
+Build-Depends: debhelper (>= 9), libxml2-utils
+Standards-Version: 3.9.5
+Homepage: https://wiki.gnome.org/Projects/NetworkManager/MobileBroadband/ServiceProviders
+
+Package: mobile-broadband-provider-info
+Architecture: all
+Depends: ${misc:Depends}
+Description: database of mobile broadband service providers
+ This package contains a database of provider-specific settings of mobile
+ broadband providers in different countries. Its functioning through Network 
+ Manager makes it easy for users to choose their mobile broadband service 
+ provider.
