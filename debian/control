@@ -9,6 +9,8 @@ Build-Depends: debhelper (>= 9),
                libxml2-utils
 Standards-Version: 3.9.8
 Homepage: https://wiki.gnome.org/Projects/NetworkManager/MobileBroadband/ServiceProviders
+Vcs-Browser: https://anonscm.debian.org/gitweb/?p=collab-maint/mobile-broadband-provider-info.git
+Vcs-Git: git://anonscm.debian.org/collab-maint/mobile-broadband-provider-info.git
 
 Package: mobile-broadband-provider-info
 Architecture: all
