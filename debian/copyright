@@ -1,4 +1,4 @@
-Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Contact: Antti Kaijanmäki <antti@canonical.com>
 Upstream-Name: mobile-broadband-provider-info
 Source: https://wiki.gnome.org/Projects/NetworkManager/MobileBroadband/ServiceProviders
@@ -11,7 +11,7 @@ License: public-domain
 
 Files: debian/*
 Copyright: 2009, Daniel Baumann <daniel@debian.org>
-           2009-2014, Bhavani Shankar <bhavi@ubuntu.com>
+           2009-2016, Bhavani Shankar <bhavi@ubuntu.com>
            2016, W. Martin Borgert <debacle@debian.org>
 License: public-domain
 

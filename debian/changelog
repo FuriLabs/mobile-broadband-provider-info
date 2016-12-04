@@ -1,10 +1,20 @@
-mobile-broadband-provider-info (20151214-1) UNRELEASED; urgency=medium
+mobile-broadband-provider-info (20161204-1) unstable; urgency=low
 
-  * d/copyright: Use https protocol in Format field
-  * d/control: Remove trailing whitespaces
-  * d/control: Set Vcs-* to salsa.debian.org
+  * Ack NMU. Thanks Martin.
+  * Return Back to Debian (Closes: #846814)
+  * Merge latest changes from git:
+    - no: add Phonero APN
+    - mt: add APN for Melita Mobile
+    - cz: add O2 balance check and top-up
+    - bd: add data for Bangladesh providers
+    - fi: update Finland provider DNA
+    - nl: t-mobile update
+    - nl: KPN update
+    - cl: add extra mnc to Movistar Chile Network
+    - build: Run configure from the builddir
+  * Update year in debian/copyright
 
- -- Ondřej Nový <onovy@debian.org>  Mon, 01 Oct 2018 09:45:55 +0200
+ -- Bhavani Shankar <bhavi@ubuntu.com>  Sun, 04 Dec 2016 08:39:36 +0530
 
 mobile-broadband-provider-info (20151214-0.1) unstable; urgency=low
 
