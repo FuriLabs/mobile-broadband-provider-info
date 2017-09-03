@@ -1,3 +1,25 @@
+mobile-broadband-provider-info (20170903-1) unstable; urgency=medium
+
+  * Merge latest changes from git:
+    - add Lycamobile APN settings
+    - dtd: add initial attach apn type
+    - italy: add Vodafone Internet Key
+    - ko: update for Korean operators
+    - cz: add Czech "MOBIL.CZ" provider (MVNO on T-Mobile)
+    - bm: add provider Bermuda Cell One
+    - is: use correct APN for Siminn Iceland
+    - kg: removes defunct operators FONEX and nexi for Kyrgyzstan
+    - kz: remove defunct CDMA operators with new GSM operator Altel 4G 
+      for Kazakhstan
+    - de: remove AldiTalk 24h flatrate
+    - hk: update 3HK
+    - uz: change MTS to UMS
+  * update standards-version no other changes
+  * update year in copyright file
+  * use secure VCS URL's
+
+ -- Bhavani Shankar <bhavi@ubuntu.com>  Sun, 03 Sep 2017 10:03:28 +0530
+
 mobile-broadband-provider-info (20161204-1) unstable; urgency=low
 
   * Ack NMU. Thanks Martin.
