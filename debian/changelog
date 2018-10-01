@@ -2,6 +2,7 @@ mobile-broadband-provider-info (20151214-1) UNRELEASED; urgency=medium
 
   * d/copyright: Use https protocol in Format field
   * d/control: Remove trailing whitespaces
+  * d/control: Set Vcs-* to salsa.debian.org
 
  -- Ondřej Nový <onovy@debian.org>  Mon, 01 Oct 2018 09:45:55 +0200
 
