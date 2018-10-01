@@ -18,8 +18,8 @@ Multi-Arch: foreign
 Depends: ${misc:Depends}
 Description: database of mobile broadband service providers
  This package contains a database of provider-specific settings of mobile
- broadband providers in different countries. Its functioning through Network 
- Manager makes it easy for users to choose their mobile broadband service 
+ broadband providers in different countries. Its functioning through Network
+ Manager makes it easy for users to choose their mobile broadband service
  provider.
  .
  The database contains information relevant to mobile networks access point
