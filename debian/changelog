@@ -1,3 +1,9 @@
+mobile-broadband-provider-info (20170903-2) UNRELEASED; urgency=medium
+
+  * d/copyright: Use https protocol in Format field
+
+ -- Ondřej Nový <onovy@debian.org>  Mon, 01 Oct 2018 09:45:55 +0200
+
 mobile-broadband-provider-info (20170903-1) unstable; urgency=medium
 
   * Merge latest changes from git:
