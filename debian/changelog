@@ -1,4 +1,4 @@
-mobile-broadband-provider-info (20190618-1) UNRELEASED; urgency=medium
+mobile-broadband-provider-info (20190618-1) unstable; urgency=medium
 
   [ Ondřej Nový ]
   * d/copyright: Use https protocol in Format field
@@ -16,7 +16,7 @@ mobile-broadband-provider-info (20190618-1) UNRELEASED; urgency=medium
   * Update debian/copyright
   * Bump Standards-Version to 4.4.0, no changes
 
- -- Ondřej Nový <onovy@debian.org>  Mon, 01 Oct 2018 09:45:55 +0200
+ -- Graham Inggs <ginggs@debian.org>  Tue, 13 Aug 2019 10:28:12 +0000
 
 mobile-broadband-provider-info (20170903-1) unstable; urgency=medium
 
