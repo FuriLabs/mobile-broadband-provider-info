@@ -13,6 +13,7 @@ mobile-broadband-provider-info (20190618-1) UNRELEASED; urgency=medium
   * New upstream release (Closes: #929633)
   * Do not ship NEWS file no longer provided by upstream
   * Drop Lintian overrides no longer needed
+  * Update debian/copyright
 
  -- Ondřej Nový <onovy@debian.org>  Mon, 01 Oct 2018 09:45:55 +0200
 
