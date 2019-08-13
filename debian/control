@@ -1,9 +1,7 @@
 Source: mobile-broadband-provider-info
 Section: admin
 Priority: optional
-Maintainer: Bhavani Shankar <bhavi@ubuntu.com>
-Uploaders: Mathieu Trudel-Lapierre <mathieu-tl@ubuntu.com>,
-           Antti Kaijanmäki <antti.kaijanmaki@canonical.com>
+Maintainer: Graham Inggs <ginggs@debian.org>
 Build-Depends: debhelper (>= 9),
                dh-autoreconf,
                libxml2-utils
