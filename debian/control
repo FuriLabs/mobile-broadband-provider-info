@@ -5,6 +5,7 @@ Maintainer: Graham Inggs <ginggs@debian.org>
 Build-Depends: debhelper-compat (= 12),
                libxml2-utils
 Standards-Version: 4.1.0
+Rules-Requires-Root: no
 Homepage: https://wiki.gnome.org/Projects/NetworkManager/MobileBroadband/ServiceProviders
 Vcs-Browser: https://salsa.debian.org/debian/mobile-broadband-provider-info
 Vcs-Git: https://salsa.debian.org/debian/mobile-broadband-provider-info.git
