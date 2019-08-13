@@ -7,6 +7,7 @@ mobile-broadband-provider-info (20170903-2) UNRELEASED; urgency=medium
 
   [ Graham Inggs ]
   * Adopt the package (Closes: #884619, #932331)
+  * Switch to debhelper 12
 
  -- Ondřej Nový <onovy@debian.org>  Mon, 01 Oct 2018 09:45:55 +0200
 

@@ -3,7 +3,7 @@
 DATE=$(shell date +%Y%m%d)
 
 %:
-	dh ${@} --with autoreconf
+	dh $@
 
 get-orig-source:
 	# Needs: automake git-core
