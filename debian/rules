@@ -1,19 +1,4 @@
 #!/usr/bin/make -f
 
-DATE=$(shell date +%Y%m%d)
-
 %:
 	dh $@
-
-get-orig-source:
-	# Needs: automake git-core
-	cd .. && \
-	git clone git://git.gnome.org/mobile-broadband-provider-info && \
-	mv mobile-broadband-provider-info mobile-broadband-provider-info-$(DATE)
-
-	cd ../mobile-broadband-provider-info-$(DATE) && \
-	rm -rf .git && \
-	autoreconf -i && \
-	rm -rf autom4te.cache
-
-	tar cfz ../mobile-broadband-provider-info_$(DATE).orig.tar.gz ../mobile-broadband-provider-info-$(DATE)
