@@ -2,6 +2,7 @@ mobile-broadband-provider-info (20190618-3) UNRELEASED; urgency=medium
 
   * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
     Repository-Browse.
+  * Update standards version to 4.4.1, no changes needed.
 
  -- Debian Janitor <janitor@jelmer.uk>  Sun, 05 Jan 2020 10:58:42 +0000
 
