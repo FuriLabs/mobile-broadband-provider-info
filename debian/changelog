@@ -3,10 +3,12 @@ mobile-broadband-provider-info (20190618-3) UNRELEASED; urgency=medium
   [ Debian Janitor ]
   * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
     Repository-Browse.
-  * Update standards version to 4.4.1, no changes needed.
 
   [ Sicelo Mhlongo ]
   * Add eSwatini mobile provider info
+
+  [ Graham Inggs ]
+  * Bump Standards-Version to 4.5.0, no changes
 
  -- Graham Inggs <ginggs@debian.org>  Mon, 17 Feb 2020 19:10:02 +0000
 
