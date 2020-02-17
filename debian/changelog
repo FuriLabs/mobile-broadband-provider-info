@@ -1,4 +1,4 @@
-mobile-broadband-provider-info (20190618-3) UNRELEASED; urgency=medium
+mobile-broadband-provider-info (20190618-3) unstable; urgency=medium
 
   [ Debian Janitor ]
   * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
@@ -10,7 +10,7 @@ mobile-broadband-provider-info (20190618-3) UNRELEASED; urgency=medium
   [ Graham Inggs ]
   * Bump Standards-Version to 4.5.0, no changes
 
- -- Graham Inggs <ginggs@debian.org>  Mon, 17 Feb 2020 19:10:02 +0000
+ -- Graham Inggs <ginggs@debian.org>  Mon, 17 Feb 2020 19:50:02 +0000
 
 mobile-broadband-provider-info (20190618-2) unstable; urgency=medium
 
