@@ -1,3 +1,9 @@
+mobile-broadband-provider-info (20190618-4) UNRELEASED; urgency=medium
+
+  * Wrap long lines in changelog entries: 20130312-1, 20111113-1.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Tue, 28 Apr 2020 10:30:08 +0000
+
 mobile-broadband-provider-info (20190618-3) unstable; urgency=medium
 
   [ Debian Janitor ]
@@ -152,7 +158,8 @@ mobile-broadband-provider-info (20130506-1) unstable; urgency=low
 mobile-broadband-provider-info (20130312-1) unstable; urgency=high
 
   * Merge upstream version 20130312 from git:
-    - CO: Add Virgin Mobile, UNE LTE 4G and rename Comcel to Claro. (LP: #1128627)
+    - CO: Add Virgin Mobile, UNE LTE 4G and rename Comcel to Claro.
+      (LP: #1128627)
     - AM: Add Karabakh Telecom (Armenia).
     - MM: Add Myanmar and MPT GSM operator. (LP: #1079510)
     - IL: Add Home Cellular, Golan Telecom, Hot Mobile, Rami Levi and
@@ -269,7 +276,8 @@ mobile-broadband-provider-info (20120307-1) unstable; urgency=low
 mobile-broadband-provider-info (20111113-1) unstable; urgency=low
 
   * Merge upstream version 20111113 from git:
-    - PL: New providers for Poland (and top-up/balance support). (Closes: #640946)
+    - PL: New providers for Poland (and top-up/balance support).
+      (Closes: #640946)
     - CO: Add new Columbian providers. (LP: #789684)
     - TZ: Update Zain Tanzania name to reflect recent branding. (LP: #823384)
     - OM: Update Oman Mobile APN. (LP: #840600)
