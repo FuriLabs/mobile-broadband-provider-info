@@ -1,4 +1,4 @@
-mobile-broadband-provider-info (20201225-1) UNRELEASED; urgency=medium
+mobile-broadband-provider-info (20201225-1) unstable; urgency=medium
 
   [ Debian Janitor ]
   * Wrap long lines in changelog entries: 20130312-1, 20111113-1.
@@ -9,7 +9,7 @@ mobile-broadband-provider-info (20201225-1) UNRELEASED; urgency=medium
   * Switch to debhelper 13
   * Bump Standards-Version to 4.5.1, no changes
 
- -- Debian Janitor <janitor@jelmer.uk>  Tue, 28 Apr 2020 10:30:08 +0000
+ -- Graham Inggs <ginggs@debian.org>  Fri, 25 Dec 2020 20:29:41 +0000
 
 mobile-broadband-provider-info (20190618-3) unstable; urgency=medium
 
