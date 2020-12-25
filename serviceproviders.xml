@@ -531,6 +531,12 @@ conceived.
 		<name>HoT</name>
 		<gsm>
 			<network-id mcc="232" mnc="07"/>
+			<balance-check>
+				<ussd>*101#</ussd>
+			</balance-check>
+			<balance-top-up>
+				<ussd replacement="CODE">*103*CODE#</ussd>
+			</balance-top-up>
 			<apn value="webaut">
 				<plan type="prepaid"/>
 				<usage type="internet"/>
@@ -1992,6 +1998,15 @@ conceived.
 <!-- Bahamas -->
 <country code="bs">
 	<provider>
+		<name>Aliv</name>
+		<gsm>
+			<network-id mcc="364" mnc="49"/>
+			<apn value="pda.newcomobile.com">
+				<usage type="internet"/>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
 		<name>Batelco</name>
 		<gsm>
 			<network-id mcc="364" mnc="390"/>
@@ -2537,7 +2552,7 @@ conceived.
 		</gsm>
 	</provider>
 	<provider>
-		<name>Orange</name>
+		<name>Salt</name>
 		<gsm>
 			<network-id mcc="228" mnc="03"/>
 			<balance-check>
@@ -2546,27 +2561,21 @@ conceived.
 			<balance-top-up>
 				<ussd replacement="CODE">#121*CODE#</ussd>
 			</balance-top-up>
-			<apn value="mobileoffice3g">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<name>Internet Everywhere - Standard</name>
-				<dns>213.55.128.1</dns>
-				<dns>213.55.128.2</dns>
-			</apn>
-			<apn value="click">
+			<apn value="internet">
 				<plan type="prepaid"/>
 				<usage type="internet"/>
-				<name>Internet Everywhere - Prepaid</name>
-				<dns>213.55.128.1</dns>
-				<dns>213.55.128.2</dns>
-			</apn>
-			<apn value="intranetaccess">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<name>Internet Everywhere - Intranet Access</name>
+				<name>Salt World - Prepaid</name>
 			</apn>
 			<apn value="internet">
-				<name>Internet Everywhere - Postpaid</name>
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+				<name>Salt Internet - Postpaid</name>
+			</apn>
+			<apn value="mms">
+				<usage type="mms"/>
+				<name>Salt MMS</name>
+				<mmsc>http://192.168.151.3:8002</mmsc>
+				<mmsproxy>192.168.151.2:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
@@ -2900,6 +2909,31 @@ conceived.
 	</provider>
 	<provider>
 		<name>China Telecom</name>
+		<gsm>
+			<network-id mcc="460" mnc="11"/>
+			<apn value="ctnet">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+				<name>CTNET</name>
+				<username>ctnet@mycdma.cn</username>
+				<password>vnet.mobi</password>
+			</apn>
+			<apn value="ctlte">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+				<name>CTLTE</name>
+				<username>ctlte@mycdma.cn</username>
+				<password>vnet.mobi</password>
+			</apn>
+			<apn value="ctwap">
+				<usage type="mms"/>
+				<name>电信彩信</name>
+				<username>ctwap@mycdma.cn</username>
+				<password>vnet.mobi</password>
+				<mmsc>http://mmsc.vnet.mobi</mmsc>
+				<mmsproxy>10.0.0.200:80</mmsproxy>
+			</apn>
+		</gsm>
 		<cdma>
 			<username>ctnet@mycdma.cn</username>
 			<password>vnet.mobi</password>
@@ -3174,10 +3208,10 @@ conceived.
 		</gsm>
 	</provider>
 	<!-- Czech MVNO operators -->
- 	<provider primary="false">
+	<provider primary="false">
 		<!-- MVNO operating on T-Mobile's network -->
- 		<name>MOBIL.CZ</name>
- 		<gsm>
+		<name>MOBIL.CZ</name>
+		<gsm>
 			<network-id mcc="230" mnc="01"/>
 			<!-- http://www.mobil.cz/kredit.aspx#jakDobit -->
 			<balance-check>
@@ -3188,10 +3222,10 @@ conceived.
 			</balance-top-up>
 			<!-- http://www.mobil.cz/podpora-kredit.aspx#internet-1 -->
 			<apn value="internet.t-mobile.cz">
- 				<plan type="prepaid"/>
+				<plan type="prepaid"/>
 				<usage type="internet"/>
- 				<username>gprs</username>
- 				<password>gprs</password>
+				<username>gprs</username>
+				<password>gprs</password>
 			</apn>
 		</gsm>
 	</provider>
@@ -3830,7 +3864,7 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
-	<!-- Onfone: https://www.onfone.dk/Kundeservice/mobil/saet_din_mobil_op/internet-gprs-3g/ --> 
+	<!-- Onfone: https://www.onfone.dk/Kundeservice/mobil/saet_din_mobil_op/internet-gprs-3g/ -->
 	<provider>
 		<name>Onfone Internet DK</name>
 		<gsm>
@@ -8079,7 +8113,7 @@ conceived.
 			<network-id mcc="457" mnc="01"/>
 			<balance-check>
 				<ussd>*122#</ussd>
-			</balance-check>			
+			</balance-check>
 			<apn value="ltcnet">
 				<plan type="prepaid"/>
 				<usage type="internet"/>
@@ -9056,6 +9090,24 @@ conceived.
 
 <!-- Malawi -->
 <country code="mw">
+	<provider>
+		<name>Airtel MW</name>
+		<gsm>
+			<network-id mcc="650" mnc="10"/>
+			<balance-check>
+				<ussd>*137#</ussd>
+			</balance-check>
+			<balance-top-up>
+				<ussd replacement="CODE">*136*CODE#</ussd>
+			</balance-top-up>
+			<apn value="internet">
+				<plan type="prepaid"/>
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+				<name>All plans</name>
+			</apn>
+		</gsm>
+	</provider>
 	<provider>
 		<name>TNM</name>
 		<gsm>
@@ -10410,7 +10462,7 @@ conceived.
 <country code="pl">
 	<!-- Polish physical operators -->
 	<provider primary="true">
-		<name>T-mobile</name><!-- rebranded from Era in 2011 -->
+		<name>T-Mobile</name>
 		<gsm>
 			<network-id mcc="260" mnc="02"/>
 			<voicemail>602950</voicemail>
@@ -10424,24 +10476,22 @@ conceived.
 				<plan type="postpaid"/>
 				<plan type="prepaid"/>
 				<usage type="internet"/>
-				<dns>213.158.194.1</dns>
-				<dns>213.158.193.38</dns>
 			</apn>
 			<apn value="mms">
 				<usage type="mms"/>
-				<name>T-Mobile.pl MMS</name>
+				<name>MMS</name>
 				<mmsc>http://mms/servlets/mms</mmsc>
 				<mmsproxy>213.158.194.226:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
 	<provider primary="true">
-		<name>Play Online</name>
+		<name>Play</name>
 		<gsm>
 			<network-id mcc="260" mnc="06"/>
+			<voicemail>*200</voicemail>
 			<balance-check>
 				<ussd>*101#</ussd>
-				<ussd>*155#</ussd>
 			</balance-check>
 			<balance-top-up>
 				<ussd replacement="CODE">*100*CODE#</ussd>
@@ -10454,8 +10504,7 @@ conceived.
 			<apn value="mms">
 				<usage type="mms"/>
 				<name>MMS</name>
-				<mmsc>http://10.10.28.164/mms/wapenc</mmsc>
-				<mmsproxy>10.10.25.5:8080</mmsproxy>
+				<mmsc>http://mmsc.play.pl/mms/wapenc</mmsc>
 			</apn>
 		</gsm>
 	</provider>
@@ -10474,22 +10523,43 @@ conceived.
 				<plan type="postpaid"/>
 				<plan type="prepaid"/>
 				<usage type="internet"/>
-				<name>Standard access - with image compression</name>
-				<name xml:lang="pl">Dostęp standardowy - z kompresją grafiki</name>
+				<name>Standard access</name>
+				<name xml:lang="pl">Dostęp standardowy</name>
 				<username>internet</username>
 				<password>internet</password>
-				<dns>194.9.223.79</dns>
 				<dns>194.204.159.1</dns>
+				<dns>194.204.152.34</dns>
+			</apn>
+			<apn value="internetipv6">
+				<plan type="postpaid"/>
+				<plan type="prepaid"/>
+				<usage type="internet"/>
+				<name>Standard access (IPv6)</name>
+				<name xml:lang="pl">Dostęp standardowy (IPv6)</name>
+				<username>internetipv6</username>
+				<password>internetipv6</password>
+				<dns>194.204.159.1</dns>
+				<dns>194.204.152.34</dns>
 			</apn>
 			<apn value="vpn">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
-				<name>VPN mode access without compression (requires activation)</name>
-				<name xml:lang="pl">Dostęp VPN bez kompresji (wymaga aktywacji)</name>
-				<username>internet</username>
-				<password>internet</password>
-				<dns>194.9.223.79</dns>
-				<dns>194.204.159.1</dns>
+				<name>External dynamic IP address (requires activation)</name>
+				<name xml:lang="pl">Zewnętrzny dynamiczny adres IP (wymaga aktywacji)</name>
+			</apn>
+			<apn value="vpn.static.pl">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+				<name>External static IP address (requires activation)</name>
+				<name xml:lang="pl">Zewnętrzny statyczny adres IP (wymaga aktywacji)</name>
+			</apn>
+			<apn value="mms">
+				<usage type="mms"/>
+				<name>MMS</name>
+				<username>mms</username>
+				<password>mms</password>
+				<mmsc>http://mms.orange.pl</mmsc>
+				<mmsproxy>192.168.6.104:8080</mmsproxy>
 			</apn>
 		</gsm>
 		<cdma>
@@ -10508,36 +10578,30 @@ conceived.
 			<balance-top-up>
 				<ussd replacement="CODE">*123*CODE#</ussd>
 			</balance-top-up>
-			<apn value="www.plusgsm.pl">
+			<apn value="internet">
 				<plan type="postpaid"/>
 				<plan type="prepaid"/>
 				<usage type="internet"/>
 				<name>Standard access</name>
 				<name xml:lang="pl">Dostęp standardowy</name>
-				<username>plusgsm</username>
-				<password>plusgsm</password>
-				<dns>212.2.96.51</dns>
-				<dns>212.2.96.52</dns>
+				<username>internet</username>
+				<password>internet</password>
 			</apn>
-			<apn value="pro.plusgsm.pl">
+			<apn value="pro">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 				<name>External dynamic IP address (requires activation)</name>
 				<name xml:lang="pl">Zewnętrzny dynamiczny adres IP (wymaga aktywacji)</name>
 				<username>plusgsm</username>
 				<password>plusgsm</password>
-				<dns>212.2.96.51</dns>
-				<dns>212.2.96.52</dns>
 			</apn>
-			<apn value="m2m.plusgsm.pl">
+			<apn value="m2m">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 				<name>External static IP address (requires activation)</name>
 				<name xml:lang="pl">Zewnętrzny statyczny adres IP (wymaga aktywacji)</name>
 				<username>plusgsm</username>
 				<password>plusgsm</password>
-				<dns>212.2.96.51</dns>
-				<dns>212.2.96.52</dns>
 			</apn>
 			<apn value="optimizer">
 				<plan type="postpaid"/>
@@ -10545,12 +10609,10 @@ conceived.
 				<usage type="internet"/>
 				<name>iPlus optimizer with data compression</name>
 				<name xml:lang="pl">iPlus optimizer z kompresją danych</name>
-				<dns>212.2.96.51</dns>
-				<dns>212.2.96.52</dns>
 			</apn>
-			<apn value="mms.plusgsm.pl">
+			<apn value="mms">
 				<usage type="mms"/>
-				<name>MMS GPRS</name>
+				<name>MMS</name>
 				<mmsc>http://mms.plusgsm.pl:8002</mmsc>
 				<mmsproxy>212.2.96.16:8080</mmsproxy>
 			</apn>
@@ -10607,61 +10669,46 @@ conceived.
 		</cdma>
 	</provider>
 	<provider primary="false">
-		<name>FreeM</name>
+		<name>Heyah</name>
 		<gsm>
-			<network-id mcc="260" mnc="01"/>
-			<apn value="freedata.pl">
-				<plan type="prepaid"/>
-				<usage type="internet"/>
-			</apn>
- 		</gsm>
- 	</provider>
- 	<provider primary="false">
- 		<name>Heyah</name>
- 		<gsm>
- 			<network-id mcc="260" mnc="02"/>
+			<network-id mcc="260" mnc="02"/>
 			<balance-check>
 				<ussd>*108#</ussd>
 			</balance-check>
 			<balance-top-up>
 				<ussd replacement="CODE">*109*CODE#</ussd>
 			</balance-top-up>
- 			<apn value="heyah.pl">
- 				<plan type="prepaid"/>
-				<usage type="internet"/>
- 				<username>heyah</username>
- 				<password>heyah</password>
-				<dns>213.158.194.1</dns>
-				<dns>213.158.193.38</dns>
-			</apn>
-		</gsm>
-	</provider>
-	<provider primary="false">
-		<name>GaduAIR</name>
-		<gsm>
-			<network-id mcc="260" mnc="01"/>
-			<balance-check>
-				<ussd>*101#</ussd>
-			</balance-check>
-			<apn value="internet.gadu-gadu.pl">
+			<apn value="heyah.pl">
 				<plan type="prepaid"/>
 				<usage type="internet"/>
+				<name>heyah.pl</name>
+			</apn>
+			<apn value="internet">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+				<name>internet</name>
+			</apn>
+			<apn value="heyahmms">
+				<plan type="prepaid"/>
+				<usage type="mms"/>
+				<name>heyahmms</name>
+				<username>heyah</username>
+				<password>heyah</password>
+				<mmsc>http://mms.heyah.pl/servlets/mms</mmsc>
+				<mmsproxy>213.158.194.226:8080</mmsproxy>
+			</apn>
+			<apn value="mms">
+				<plan type="postpaid"/>
+				<usage type="mms"/>
+				<name>mms</name>
+				<username>mms</username>
+				<password>mms</password>
+				<mmsc>http://mms/servlets/mms</mmsc>
+				<mmsproxy>213.158.194.226:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
 	<provider primary="false">
-		<name>Aster</name>
- 		<gsm>
- 			<network-id mcc="260" mnc="03"/>
-			<apn value="aster.internet">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
- 				<username>internet</username>
- 				<password>internet</password>
- 			</apn>
- 		</gsm>
- 	</provider>
- 	<provider primary="false">
 		<name>Netia</name>
 		<gsm>
 			<network-id mcc="260" mnc="06"/>
@@ -10682,19 +10729,6 @@ conceived.
 		</gsm>
 	</provider>
 	<provider primary="false">
-		<name>mBank mobile</name>
- 		<gsm>
- 			<network-id mcc="260" mnc="01"/>
-			<balance-check>
-				<ussd>*100#</ussd>
-			</balance-check>
-			<apn value="www.mobile.pl">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-			</apn>
-		</gsm>
-	</provider>
-	<provider primary="false">
 		<name>INEA</name>
 		<gsm>
 			<network-id mcc="260" mnc="03"/>
@@ -10702,33 +10736,9 @@ conceived.
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 				<username>internet</username>
- 			</apn>
- 		</gsm>
- 	</provider>
- 	<provider primary="false">
-		<name>Mobilking</name>
-		<gsm>
-			<network-id mcc="260" mnc="02"/>
-			<apn value="wapMOBILKING">
-				<plan type="prepaid"/>
-				<usage type="internet"/>
-				<username>mobilking</username>
-				<password>mobilking</password>
 			</apn>
 		</gsm>
 	</provider>
-	<provider primary="false">
-		<name>SamiSwoi</name>
- 		<gsm>
- 			<network-id mcc="260" mnc="01"/>
-			<apn value="www.plusgsm.pl">
-				<plan type="prepaid"/>
-				<usage type="internet"/>
-				<username>internet</username>
-				<password>internet</password>
-			</apn>
- 		</gsm>
- 	</provider>
 	<provider primary="false">
 		<name>Sferia</name>
 		<cdma>
@@ -10758,6 +10768,74 @@ conceived.
 				<usage type="internet"/>
 				<username>lmpl</username>
 				<password>plus</password>
+			</apn>
+		</gsm>
+	</provider>
+	<provider primary="false">
+		<name>nju mobile</name>
+		<gsm>
+			<network-id mcc="260" mnc="03"/>
+			<voicemail>*501</voicemail>
+			<balance-check>
+				<ussd>*127*1#</ussd>
+			</balance-check>
+			<balance-top-up>
+				<ussd replacement="CODE">*128*CODE#</ussd>
+			</balance-top-up>
+			<apn value="internet">
+				<plan type="postpaid"/>
+				<plan type="prepaid"/>
+				<usage type="internet"/>
+				<name>Standard access</name>
+				<name xml:lang="pl">Dostęp standardowy</name>
+				<username>internet</username>
+				<password>internet</password>
+				<dns>194.204.159.1</dns>
+				<dns>194.204.152.34</dns>
+			</apn>
+			<apn value="internetipv6">
+				<plan type="postpaid"/>
+				<plan type="prepaid"/>
+				<usage type="internet"/>
+				<name>Standard access (IPv6)</name>
+				<name xml:lang="pl">Dostęp standardowy (IPv6)</name>
+				<username>internetipv6</username>
+				<password>internetipv6</password>
+				<dns>194.204.159.1</dns>
+				<dns>194.204.152.34</dns>
+			</apn>
+			<apn value="mms">
+				<usage type="mms"/>
+				<name>MMS</name>
+				<username>mms</username>
+				<password>mms</password>
+				<mmsc>http://mms.njumobile.pl</mmsc>
+				<mmsproxy>192.168.6.104:8080</mmsproxy>
+			</apn>
+		</gsm>
+	</provider>
+	<provider primary="false">
+		<name>Virgin Mobile</name>
+		<gsm>
+			<network-id mcc="260" mnc="02"/>
+			<network-id mcc="260" mnc="06"/>
+			<balance-check>
+				<ussd>*101#</ussd>
+			</balance-check>
+			<balance-top-up>
+				<ussd replacement="CODE">*100*CODE#</ussd>
+			</balance-top-up>
+			<apn value="virgin-internet">
+				<plan type="postpaid"/>
+				<plan type="prepaid"/>
+				<usage type="internet"/>
+				<name>Internet</name>
+			</apn>
+			<apn value="virgin-mms">
+				<usage type="mms"/>
+				<name>MMS</name>
+				<mmsc>http://mms.virginpol.jsc</mmsc>
+				<mmsproxy>wap.virginpol.jsc:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
@@ -11580,6 +11658,24 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
+	<provider>
+		<name>Yota</name>
+		<gsm>
+			<network-id mcc="250" mnc="11"/>
+			<apn value="internet.yota">
+				<plan type="prepaid"/>
+				<usage type="internet"/>
+				<name>Internet for LTE modems</name>
+				<name xml:lang="ru">Интернет для модемов</name>
+			</apn>
+			<apn value="yota.ru">
+				<plan type="prepaid"/>
+				<usage type="internet"/>
+				<name>Internet for LTE modems (in case internet.yota does not work)</name>
+				<name xml:lang="ru">Интернет для модемов (если internet.yota не работает)</name>
+			</apn>
+		</gsm>
+	</provider>
 </country>
 
 <!-- Saudi Arabia -->
@@ -11789,7 +11885,7 @@ conceived.
 		<gsm>
 			<network-id mcc="240" mnc="01"/>
 			<network-id mcc="240" mnc="05"/>
-			
+
 			<!-- http://multicomsecurity.se/produkter-tjanster/mobil-datakommunikation/mobiflex/ -->
 			<apn value="mobiflex.telia.se">
 				<plan type="postpaid"/>
@@ -12021,6 +12117,9 @@ conceived.
 		<name>Starhub</name>
 		<gsm>
 			<network-id mcc="525" mnc="05"/>
+			<balance-check>
+				<ussd>*123*1*1#</ussd>
+			</balance-check>
 			<apn value="shwap">
 				<plan type="postpaid"/>
 				<usage type="wap"/>
@@ -12328,6 +12427,28 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
+
+	<provider>
+		<name>AIS (AWN)</name>
+		<gsm>
+			<network-id mcc="520" mnc="03"/>
+			<apn value="internet">
+				<usage type="internet"/>
+				<name>AIS internet</name>
+				<authentication method="chap"/>
+				<dns>202.183.255.20</dns>
+				<dns>202.183.255.21</dns>
+			</apn>
+			<apn value="mms">
+				<usage type="mms"/>
+				<name>AIS MMS</name>
+				<authentication method="chap"/>
+				<mmsc>http://mms.ais.co.th</mmsc>
+				<mmsproxy>203.170.229.34:8080</mmsproxy>
+			</apn>
+		</gsm>
+	</provider>
+
 	<provider>
 		<name>DTAC</name>
 		<gsm>
@@ -13854,6 +13975,24 @@ conceived.
 		</gsm>
 	</provider>
 	<provider>
+		<!-- MVNO operating on T-Mobile/Sprint -->
+		<name>SpeedTalk Mobile</name>
+		<gsm>
+			<network-id mcc="310" mnc="260"/>
+			<apn value="mobilenet">
+				<plan type="prepaid"/>
+				<usage type="internet"/>
+				<name>Broadband</name>
+			</apn>
+			<apn value="wholesale">
+				<plan type="prepaid"/>
+				<usage type="mms"/>
+				<name>Cellular (MMS)</name>
+				<mmsc>http://wholesale.mmsmvno.com/mms/wapenc</mmsc>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
 		<name>Lycamobile</name>
 		<gsm>
 			<network-id mcc="311" mnc="960"/>
@@ -14300,6 +14439,48 @@ conceived.
 				<name>8 ta mms</name>
 				<mmsc>http://mms.8ta.com:38090/was</mmsc>
 				<mmsproxy>10.148.29.101:8080</mmsproxy>
+			</apn>
+		</gsm>
+	</provider>
+</country>
+
+<!-- Eswatini (Swaziland) -->
+<country code="sz">
+	<provider>
+		<name>MTN Eswatini</name>
+		<gsm>
+			<network-id mcc="653" mnc="10"/>
+			<msisdn-query>
+				<ussd>*123#</ussd>
+			</msisdn-query>
+			<balance-check>
+				<ussd>*556#</ussd>
+			</balance-check>
+			<balance-top-up>
+				<ussd replacement="CODE">*555*CODE#</ussd>
+			</balance-top-up>
+			<apn value="mymtn.co.sz">
+				<plan type="prepaid"/>
+				<usage type="internet"/>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
+		<name>Eswatini Mobile</name>
+		<gsm>
+			<network-id mcc="653" mnc="02"/>
+			<msisdn-query>
+				<ussd>*123#</ussd>
+			</msisdn-query>
+			<balance-check>
+				<ussd>*202#</ussd>
+			</balance-check>
+			<balance-top-up>
+				<ussd replacement="CODE">*200*CODE#</ussd>
+			</balance-top-up>
+			<apn value="internet">
+				<plan type="prepaid"/>
+				<usage type="internet"/>
 			</apn>
 		</gsm>
 	</provider>
