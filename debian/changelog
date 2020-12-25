@@ -1,6 +1,10 @@
-mobile-broadband-provider-info (20190618-4) UNRELEASED; urgency=medium
+mobile-broadband-provider-info (20201225-1) UNRELEASED; urgency=medium
 
+  [ Debian Janitor ]
   * Wrap long lines in changelog entries: 20130312-1, 20111113-1.
+
+  [ Graham Inggs ]
+  * New upstream release
 
  -- Debian Janitor <janitor@jelmer.uk>  Tue, 28 Apr 2020 10:30:08 +0000
 
