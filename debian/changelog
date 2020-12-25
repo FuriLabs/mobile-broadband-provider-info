@@ -5,6 +5,7 @@ mobile-broadband-provider-info (20201225-1) UNRELEASED; urgency=medium
 
   [ Graham Inggs ]
   * New upstream release
+  * Drop eswatini.patch included upstream
 
  -- Debian Janitor <janitor@jelmer.uk>  Tue, 28 Apr 2020 10:30:08 +0000
 
