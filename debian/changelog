@@ -7,6 +7,7 @@ mobile-broadband-provider-info (20201225-1) UNRELEASED; urgency=medium
   * New upstream release
   * Drop eswatini.patch included upstream
   * Switch to debhelper 13
+  * Bump Standards-Version to 4.5.1, no changes
 
  -- Debian Janitor <janitor@jelmer.uk>  Tue, 28 Apr 2020 10:30:08 +0000
 
