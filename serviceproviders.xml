@@ -725,6 +725,19 @@ conceived.
      http://ausdroid.net/apns/ -->
 <country code="au">
 	<provider>
+		<name>Aldi Mobile AU</name>
+		<!-- https://www.aldimobile.com.au/blogs/using-and-managing-your-service/what-are-the-data-internet-settings-for-my-aldimobile-service -->
+		<gsm>
+			<network-id mcc="505" mnc="01"/>
+			<apn value="mdata.net.au">
+				<usage type="mms"/>
+				<name>Mobile Data</name>
+				<mmsc>http://mmsc.mdata.net.au:8003</mmsc>
+				<mmsproxy>10.1.1.180</mmsproxy>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
 		<name>Amaysim</name>
 		<!-- http://www.amaysim.com.au/help-support/amaysim-mobile-broadband.html/ -->
 		<gsm>
@@ -2190,7 +2203,7 @@ conceived.
 		<!-- http://life.com.by/en/services/internet-105.html -->
 		<name>life:)</name>
 		<gsm>
-			<network-id mcc="257" mnc="03"/>
+			<network-id mcc="257" mnc="04"/>
 			<balance-check>
 				<ussd>*100#</ussd>
 			</balance-check>
@@ -3443,6 +3456,7 @@ conceived.
 			<balance-top-up>
 				<ussd replacement="CODE">*101*CODE#</ussd>
 			</balance-top-up>
+			<!-- ipv4-only APN, deprecated, but still popular, without CGN -->
 			<apn value="internet.t-d1.de">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
@@ -3450,6 +3464,7 @@ conceived.
 				<dns>193.254.160.1</dns>
 				<dns>193.254.160.130</dns>
 			</apn>
+			<!-- dual stack or ipv4-only APN, type ipv4v6 or ipv4 -->
 			<apn value="internet.t-mobile">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
@@ -3457,6 +3472,23 @@ conceived.
 				<password>tm</password>
 				<dns>10.74.83.22</dns>
 				<dns>193.254.160.1</dns>
+			</apn>
+			<!-- https://telekomhilft.telekom.de/t5/Blog/Neuer-IPv6-Zugang-zum-mobilen-Internet-im-Netz-der-Telekom/ba-p/4254741 -->
+			<!-- IPv6-only APN, type ipv6 or ipv4v6  -->
+			<apn value="internet.v6.telekom">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+			</apn>
+			<!-- https://www.telekom.de/hilfe/mobilfunk-mobiles-internet/mobiles-internet-e-mail/apn-mobilfunk/wie-lauten-die-apn-fuer-mobilfunk -->
+			<!-- dual stack or ipv4-only APN, type ipv4v6 or ipv4 -->
+			<apn value="internet.telekom">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+			</apn>
+			<apn value="iot.telekom.net">
+				<plan type="prepaid"/>
+				<usage type="internet"/>
+				<name>Business Smart Connect</name>
 			</apn>
 			<apn value="internet.t-mobile">
 				<usage type="mms"/>
@@ -4573,6 +4605,14 @@ conceived.
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 				<name>Moi Mobiili</name>
+			</apn>
+			<apn value="mms">
+				<usage type="mms"/>
+				<name>MMS</name>
+				<username>dna</username>
+				<password>mms</password>
+				<mmsc>http://mmsc.dnafinland.fi</mmsc>
+				<mmsproxy>10.1.1.2:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
@@ -9286,6 +9326,16 @@ conceived.
 		</gsm>
 	</provider>
 	<provider>
+		<name>Movitel</name>
+		<gsm>
+			<network-id mcc="643" mnc="03"/>
+			<apn value="default">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
 		<name>Vodacom</name>
 		<gsm>
 			<network-id mcc="643" mnc="04"/>
@@ -9746,6 +9796,17 @@ conceived.
 		<gsm>
 			<network-id mcc="204" mnc="08"/>
 			<apn value="internet">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
+		<!-- MVNO operating on T-Mobile's network -->
+		<name>Simpel</name>
+		<gsm>
+			<network-id mcc="204" mnc="99"/>
+			<apn value="internet.access.nl">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 			</apn>
@@ -13161,6 +13222,11 @@ conceived.
 			<network-id mcc="310" mnc="410"/>
 			<network-id mcc="310" mnc="560"/>
 			<network-id mcc="310" mnc="680"/>
+			<voicemail>+17249209990</voicemail>
+			<visual-voicemail>
+				<standard type="proprietary"/>
+				<destination-number>94183567</destination-number>
+			</visual-voicemail>
 			<!-- http://www.wireless.att.com/answer-center/main.jsp?solutionId=35078&t=solutionTab -->
 			<apn value="wap.cingular">
 				<plan type="postpaid"/>
@@ -13212,6 +13278,11 @@ conceived.
 			<network-id mcc="310" mnc="800"/>
 
 			<voicemail>123</voicemail>
+			<visual-voicemail>
+				<standard type="cvvm"/>
+				<destination-number>127</destination-number>
+				<carrier-prefix>//VVM</carrier-prefix>
+			</visual-voicemail>
 			<apn value="fast.t-mobile.com">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
@@ -14487,4 +14558,3 @@ conceived.
 </country>
 
 </serviceproviders>
-
