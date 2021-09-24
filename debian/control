@@ -5,7 +5,7 @@ Maintainer: Graham Inggs <ginggs@debian.org>
 Build-Depends: debhelper-compat (= 13),
                libxml2-utils,
                xsltproc
-Standards-Version: 4.5.1
+Standards-Version: 4.6.0
 Rules-Requires-Root: no
 Homepage: https://wiki.gnome.org/Projects/NetworkManager/MobileBroadband/ServiceProviders
 Vcs-Browser: https://salsa.debian.org/debian/mobile-broadband-provider-info
