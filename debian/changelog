@@ -1,3 +1,9 @@
+mobile-broadband-provider-info (20210805-1) UNRELEASED; urgency=medium
+
+  * New upstream release
+
+ -- Graham Inggs <ginggs@debian.org>  Fri, 24 Sep 2021 19:36:35 +0000
+
 mobile-broadband-provider-info (20201225-1) unstable; urgency=medium
 
   [ Debian Janitor ]
