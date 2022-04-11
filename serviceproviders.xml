@@ -1059,11 +1059,6 @@ conceived.
 				<usage type="wap"/>
 				<name>Telstra Internet/Wap</name>
 			</apn>
-			<apn value="telstra.mms">
-				<plan type="postpaid"/>
-				<usage type="mms"/>
-				<name>Telstra MMS</name>
-			</apn>
 			<apn value="telstra.bigpond">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
@@ -1316,7 +1311,7 @@ conceived.
 		<gsm>
 			<network-id mcc="470" mnc="02"/>
 			<msisdn-query>
-				<ussd>*140*2*4#</ussd>
+				<ussd>*2#</ussd>
 			</msisdn-query>
 			<balance-check>
 				<ussd>*222#</ussd>
@@ -1327,18 +1322,18 @@ conceived.
 			<apn value="internet">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
-				<name>Internet</name>
+				<name>Robi Internet</name>
 				<dns>192.168.23.7</dns>
 			</apn>
 			<apn value="internet">
 				<plan type="prepaid"/>
 				<usage type="internet"/>
-				<name>Internet</name>
+				<name>Robi Internet</name>
 				<dns>192.168.23.7</dns>
 			</apn>
 			<apn value="wap">
 				<usage type="mms"/>
-				<name>AKTEL-MMS 2 0</name>
+				<name>Robi MMS</name>
 				<mmsc>http://192.168.23.4/was</mmsc>
 				<mmsproxy>192.168.23.7:9028</mmsproxy>
 			</apn>
@@ -1360,18 +1355,18 @@ conceived.
 			<apn value="blweb">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
-				<name>Web</name>
+				<name>Banglalink Web</name>
 				<dns>10.10.55.34</dns>
 			</apn>
 			<apn value="blweb">
 				<plan type="prepaid"/>
 				<usage type="internet"/>
-				<name>Web</name>
+				<name>Banglalink Web</name>
 				<dns>10.10.55.34</dns>
 			</apn>
 			<apn value="blmms">
 				<usage type="mms"/>
-				<name>blmms</name>
+				<name>Banglalink MMS</name>
 				<mmsc>http://mmsc1:10021/mmsc/01</mmsc>
 				<mmsproxy>10.10.55.34:8799</mmsproxy>
 			</apn>
@@ -1393,6 +1388,7 @@ conceived.
 			<apn value="gpinternet">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
+				<name>GP Internet</name>
 				<username>gp</username>
 				<password>gp</password>
 				<dns>202.56.4.120</dns>
@@ -1401,10 +1397,7 @@ conceived.
 			<apn value="gpinternet">
 				<plan type="prepaid"/>
 				<usage type="internet"/>
-				<username>gp</username>
-				<password>gp</password>
-				<dns>202.56.4.120</dns>
-				<dns>202.56.4.121</dns>
+				<name>GP Internet</name>
 			</apn>
 			<apn value="gpmms">
 				<usage type="mms"/>
@@ -1419,10 +1412,10 @@ conceived.
 		<gsm>
 			<network-id mcc="470" mnc="07"/>
 			<msisdn-query>
-				<ussd>*121*6*3#</ussd>
+				<ussd>*2#</ussd>
 			</msisdn-query>
 			<balance-check>
-				<ussd>*778#</ussd>
+				<ussd>*1#</ussd>
 			</balance-check>
 			<balance-top-up>
 				<ussd replacement="CODE">*787*CODE#</ussd>
@@ -1430,13 +1423,13 @@ conceived.
 			<apn value="internet">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
-				<name>Internet</name>
+				<name>Airtel Internet</name>
 				<dns>10.6.0.2</dns>
 			</apn>
 			<apn value="internet">
 				<plan type="prepaid"/>
 				<usage type="internet"/>
-				<name>Internet</name>
+				<name>Airtel Internet</name>
 				<dns>10.6.0.2</dns>
 			</apn>
 			<apn value="mms">
@@ -1448,7 +1441,7 @@ conceived.
 		</gsm>
 	</provider>
 	<provider>
-		<!-- http://www.teletalk.com.bd/cpoint/3G/MMS_Internet_service.php -->
+		<!-- https://www.teletalk.com.bd/internet/supporting-information -->
 		<name>Teletalk</name>
 		<gsm>
 			<network-id mcc="470" mnc="04"/>
@@ -1464,25 +1457,15 @@ conceived.
 			<apn value="wap">
 				<plan type="prepaid"/>
 				<usage type="internet"/>
-				<name>Internet</name>
+				<name>Teletalk Internet</name>
 			</apn>
 			<apn value="mms">
 				<usage type="mms"/>
-				<name>Airtel MMS</name>
+				<name>Teletalk MMS</name>
 				<mmsc>http://10.5.4.22:38090/was</mmsc>
 				<mmsproxy>10.5.4.40:8080</mmsproxy>
 			</apn>
 		</gsm>
-	</provider>
-	<provider>
-		<name>Citycell</name>
-		<cdma>
-			<username>waps</username>
-			<password>waps</password>
-			<dns>117.18.224.146</dns>
-			<dns>117.18.224.147</dns>
-			<sid value="13480"/>
-		</cdma>
 	</provider>
 </country>
 
@@ -2281,11 +2264,11 @@ conceived.
 		<name>Fido</name>
 		<gsm>
 			<network-id mcc="302" mnc="370"/>
-			<apn value="internet.fido.ca">
+			<apn value="ltemobile.apn">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
-				<username>fido</username>
-				<password>fido</password>
+				<username></username>
+				<password></password>
 				<dns>204.92.15.211</dns>
 				<dns>207.181.101.4</dns>
 			</apn>
@@ -2465,31 +2448,18 @@ conceived.
 		</gsm>
 	</provider>
 	<provider>
-		<name>WIND Mobile</name>
+		<name>Freedom Mobile</name>
 		<gsm>
 			<network-id mcc="302" mnc="490"/>
-			<apn value="broadband.windmobile.ca">
+			<apn value="internet.freedommobile.ca">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
-				<name>Laptop (data stick)</name>
+				<name>Internet</name>
 			</apn>
-			<apn value="internet.windmobile.ca">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<name>Mobile (add-on for phone)</name>
-			</apn>
-			<apn value="mnet.b-online.gr">
-				<usage type="mms"/>
-				<name>WIND MMS</name>
-				<username>mms</username>
-				<password>mms</password>
-				<mmsc>http://192.168.200.95/servlets/mms</mmsc>
-				<mmsproxy>192.168.200.11:9401</mmsproxy>
-			</apn>
-			<apn value="mms.windmobile.ca">
+			<apn value="mms.freedommobile.ca">
 				<usage type="mms"/>
 				<name>MMS</name>
-				<mmsc>http://mms.windmobile.ca</mmsc>
+				<mmsc>http://mms.freedommobile.ca</mmsc>
 				<mmsproxy>74.115.197.70:8080</mmsproxy>
 			</apn>
 		</gsm>
@@ -2513,6 +2483,23 @@ conceived.
 				<name>MoMMS</name>
 				<mmsc>http://mms.mobilicity.net</mmsc>
 				<mmsproxy>10.100.3.4:8080</mmsproxy>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
+		<name>Public Mobile</name>
+		<gsm>
+			<network-id mcc="302" mnc="220"/>
+			<apn value="sp.mb.com">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+				<name>Internet</name>
+			</apn>
+			<apn value="sp.mb.com">
+				<usage type="mms"/>
+				<name>Public Mobile MMS</name>
+				<mmsc>http://aliasredirect.net/proxy/mb/mmsc</mmsc>
+				<mmsproxy>74.49.0.18:80</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
@@ -2716,30 +2703,16 @@ conceived.
 			<apn value="bam.clarochile.cl">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
+				<name>Internet Movil</name>
 				<username>clarochile</username>
 				<password>clarochile</password>
 			</apn>
 			<apn value="bap.clarochile.cl">
 				<plan type="prepaid"/>
 				<usage type="internet"/>
-				<name>Prepago</name>
+				<name>Internet Movil</name>
 				<username>clarochile</username>
 				<password>clarochile</password>
-			</apn>
-			<apn value="wap.clarochile.cl">
-				<plan type="postpaid"/>
-				<usage type="wap"/>
-				<name>WAP</name>
-				<username>clarochile</username>
-				<password>clarochile</password>
-			</apn>
-			<apn value="mms.clarochile.cl">
-				<usage type="mms"/>
-				<name>MMS CLARO</name>
-				<username>clarochile</username>
-				<password>clarochile</password>
-				<mmsc>http://mms.clarochile.cl</mmsc>
-				<mmsproxy>172.23.200.200:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
@@ -2750,24 +2723,16 @@ conceived.
 			<apn value="imovil.entelpcs.cl">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
-				<name>Contract / Prepaid / WebSession</name>
+				<name>Banda Ancha Movil</name>
 				<username>entelpcs</username>
 				<password>entelpcs</password>
 			</apn>
 			<apn value="bam.entelpcs.cl">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
-				<name>WAP</name>
+				<name>Internet Movil</name>
 				<username>entelpcs</username>
 				<password>entelpcs</password>
-			</apn>
-			<apn value="mms.entelpcs.cl">
-				<usage type="mms"/>
-				<name>MMS Entel PCS</name>
-				<username>entelmms</username>
-				<password>entelpcs</password>
-				<mmsc>http://mmsc.entelpcs.cl</mmsc>
-				<mmsproxy>10.99.0.10:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
@@ -2775,71 +2740,67 @@ conceived.
 		<name>Movistar</name>
 		<gsm>
 			<network-id mcc="730" mnc="02"/>
-			<network-id mcc="730" mnc="10"/>
 			<apn value="web.tmovil.cl">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
-				<name>Web</name>
+				<name>Banda Ancha Movil</name>
 				<username>web</username>
 				<password>web</password>
 			</apn>
 			<apn value="wap.tmovil.cl">
 				<plan type="postpaid"/>
-				<usage type="wap"/>
-				<name>WAP</name>
+				<usage type="internet"/>
+				<name>Internet Movil</name>
 				<username>wap</username>
 				<password>wap</password>
-			</apn>
-			<apn value="dst.mms">
-				<usage type="mms"/>
-				<name>DSTMMS</name>
-				<username>mms</username>
-				<password>mms</password>
-				<mmsc>http://mms.dst.com.bn/mmsc</mmsc>
-				<mmsproxy>10.100.6.101:3130</mmsproxy>
-			</apn>
-			<apn value="dst.mms">
-				<usage type="mms"/>
-				<name>DSTMMS</name>
-				<username>mms</username>
-				<password>mms</password>
-				<mmsc>http://mms.dst.com.bn/mmsc</mmsc>
-				<mmsproxy>10.100.6.101:3130</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
 	<provider>
-		<!-- http://www.chw.net/foro/virgin/965115-apn-internet-movil-y-mms.html -->
+		<name>GTD Movil</name>
+		<gsm>
+			<network-id mcc="730" mnc="07"/>
+			<apn value="web.gtdmovil.cl">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+				<name>Internet Movil</name>
+				<username>webgtd</username>
+				<password>webgtd</password>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
 		<name>Virgin Mobile</name>
 		<gsm>
 			<network-id mcc="730" mnc="07"/>
 			<apn value="imovil.virginmobile.cl">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
+				<name>Internet Movil</name>
 			</apn>
 		</gsm>
 	</provider>
 	<provider>
-		<!-- http://www.chw.net/foro/vtr-movil/965343-apns-vtr-movil.html -->
 		<name>VTR Movil</name>
 		<gsm>
 			<network-id mcc="730" mnc="08"/>
 			<apn value="movil.vtr.com">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
+				<name>Internet Movil</name>
 				<username>vtrmovil</username>
 				<password>vtrmovil</password>
 			</apn>
 		</gsm>
 	</provider>
 	<provider>
-		<!-- http://www.nextel.cl/ayuda/apn/ -->
-		<name>Nextel</name>
+		<name>Wom</name>
 		<gsm>
 			<network-id mcc="730" mnc="09"/>
-			<apn value="wap.nextelmovil.cl">
+			<apn value="internet">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
+				<name>Internet Movil</name>
 			</apn>
 		</gsm>
 	</provider>
@@ -3464,7 +3425,8 @@ conceived.
 				<dns>193.254.160.1</dns>
 				<dns>193.254.160.130</dns>
 			</apn>
-			<!-- dual stack or ipv4-only APN, type ipv4v6 or ipv4 -->
+			<!-- dual stack or ipv4-only APN, type ipv4v6 or ipv4
+			     internet + mms apn -->
 			<apn value="internet.t-mobile">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
@@ -3472,6 +3434,8 @@ conceived.
 				<password>tm</password>
 				<dns>10.74.83.22</dns>
 				<dns>193.254.160.1</dns>
+				<mmsc>http://mms.t-mobile.de/servlets/mms</mmsc>
+				<mmsproxy>172.28.23.131:8008</mmsproxy>
 			</apn>
 			<!-- https://telekomhilft.telekom.de/t5/Blog/Neuer-IPv6-Zugang-zum-mobilen-Internet-im-Netz-der-Telekom/ba-p/4254741 -->
 			<!-- IPv6-only APN, type ipv6 or ipv4v6  -->
@@ -4156,6 +4120,15 @@ conceived.
 				<dns>163.121.128.134</dns>
 				<dns>212.103.160.18</dns>
 			</apn>
+			<apn value="mms.vodafone.eg">
+				<usage type="mms"/>
+				<name>MMS Vodafone.eg</name>
+				<username>mms</username>
+				<password>mms</password>
+				<mmsc>http://mmsc.vodafone.com.eg/servlets/mms</mmsc>
+				<mmsproxy>163.121.178.2:8080</mmsproxy>
+			</apn>
+
 		</gsm>
 	</provider>
 	<provider>
@@ -4915,6 +4888,8 @@ conceived.
 				<name>Orange MMS</name>
 				<username>orange</username>
 				<password>orange</password>
+				<mmsc>http://mms.orange.fr</mmsc>
+				<mmsproxy>192.168.10.200:8080</mmsproxy>
 			</apn>
 			<apn value="orange.ie">
 				<plan type="postpaid"/>
@@ -5052,6 +5027,42 @@ conceived.
 				<password>orange</password>
 				<mmsc>http://mms.orange.fr</mmsc>
 				<mmsproxy>192.168.10.200:8080</mmsproxy>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
+		<name>TeleCoop</name>
+		<gsm>
+			<network-id mcc="208" mnc="01"/>
+			<apn value="orange">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+				<name>Orange Internet</name>
+				<username>orange</username>
+				<password>orange</password>
+			</apn>
+			<apn value="orange.acte">
+				<usage type="mms"/>
+				<name>Orange MMS</name>
+				<username>orange</username>
+				<password>orange</password>
+				<mmsc>http://mms.orange.fr</mmsc>
+				<mmsproxy>192.168.10.200:8080</mmsproxy>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
+		<name>AIF</name>
+		<gsm>
+			<network-id mcc="208" mnc="01"/>
+			<network-id mcc="208" mnc="28"/>
+			<voicemail>777</voicemail>
+			<apn value="DATAPRO">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+				<name>Datapro</name>
+				<username></username>
+				<password></password>
 			</apn>
 		</gsm>
 	</provider>
@@ -6504,6 +6515,12 @@ conceived.
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 			</apn>
+			<apn value="mms.golantelecom.net.il">
+				<usage type="mms"/>
+				<name>Golan Telecom MMS</name>
+				<mmsc>http://mmsc.golantelecom.co.il</mmsc>
+				<mmsproxy>10.224.228.81:80</mmsproxy>
+			</apn>
 		</gsm>
 	</provider>
 	<provider>
@@ -6524,10 +6541,16 @@ conceived.
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 			</apn>
+			<apn value="mms.hotm">
+				<usage type="mms"/>
+				<name>MMS HOT Mobile</name>
+				<mmsc>http://mms.hotmobile.co.il</mmsc>
+				<mmsproxy>80.246.131.99</mmsproxy>
+			</apn>
 		</gsm>
 	</provider>
 	<provider>
-		<name>Orange</name>
+		<name>Partner</name>
 		<gsm>
 			<network-id mcc="425" mnc="01"/>
 			<apn value="uinternet">
@@ -6569,6 +6592,16 @@ conceived.
 				<usage type="internet"/>
 				<username>rl@3g</username>
 				<password>rl</password>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
+		<name>We4G</name>
+		<gsm>
+			<network-id mcc="425" mnc="09"/>
+			<apn value="we">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
 			</apn>
 		</gsm>
 	</provider>
@@ -7357,6 +7390,17 @@ conceived.
 		</gsm>
 	</provider>
 	<provider>
+		<name>Rabona Mobile</name>
+		<gsm>
+			<network-id mcc="222" mnc="54"/>
+			<apn value="rabona.it">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+				<name>RABONA WEB</name>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
 		<!-- MVNO operating on 3's network -->
 		<!-- www.bip.it -->
 		<name>Bip</name>
@@ -7685,6 +7729,106 @@ conceived.
 			<dns>210.196.3.183</dns>
 			<dns>210.141.112.163</dns>
 		</cdma>
+	</provider>
+	<provider primary="true">
+		<name>楽天モバイル</name>
+		<gsm>
+			<network-id mcc="440" mnc="11"/>
+			<!-- Roaming -->
+			<network-id mcc="440" mnc="53"/>
+			<apn value="rakuten.jp">
+				<usage type="internet"/>
+				<name>楽天 (rakuten.jp)</name>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
+		<!-- MVNO operating on NTT docomo network -->
+		<name>OCN</name>
+		<gsm>
+			<network-id mcc="440" mnc="10"/>
+			<network-id mcc="440" mnc="13"/>
+			<apn value="3g-d-2.ocn.ne.jp">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+				<name>OCN モバイル ONE (3G)</name>
+				<username>mobileid@ocn</username>
+				<password>mobile</password>
+				<authentication method="chap"/>
+			</apn>
+			<apn value="lte-d.ocn.ne.jp">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+				<name>OCN モバイル ONE</name>
+				<username>mobileid@ocn</username>
+				<password>mobile</password>
+				<authentication method="chap"/>
+			</apn>
+			<apn value="lte.ocn.ne.jp">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+				<name>OCN モバイル ONE (新コース)</name>
+				<username>mobileid@ocn</username>
+				<password>mobile</password>
+				<authentication method="chap"/>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
+		<!-- MVNO operating on NTT docomo and au(KDDI) network -->
+		<name>Excite</name>
+		<gsm>
+			<network-id mcc="440" mnc="10"/>
+			<network-id mcc="440" mnc="51"/>
+			<apn value="vmobile.jp">
+				<usage type="internet"/>
+				<name>エキサイトモバイル</name>
+				<username>bb@excite.co.jp</username>
+				<password>excite</password>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
+		<!-- MVNO operating on NTT docomo, au(KDDI) and Softbank network -->
+		<name>Mineo</name>
+		<gsm>
+			<network-id mcc="440" mnc="10"/>
+			<apn value="mineo-d.jp">
+				<usage type="internet"/>
+				<name>Mineo (Dプラン)</name>
+				<username>mineo@k-opti.com</username>
+				<password>mineo</password>
+				<authentication method="chap"/>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
+		<!-- MVNO operating on NTT docomo, au(KDDI) and Softbank network -->
+		<name>Mineo</name>
+		<gsm>
+			<network-id mcc="440" mnc="51"/>
+			<apn value="mineo.jp">
+				<usage type="internet"/>
+				<name>Mineo (Aプラン)</name>
+				<username>mineo@k-opti.com</username>
+				<password>mineo</password>
+				<authentication method="chap"/>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
+		<!-- MVNO operating on NTT docomo, au(KDDI) and Softbank network -->
+		<name>Mineo</name>
+		<gsm>
+			<network-id mcc="440" mnc="20"/>
+			<apn value="mineo-s.jp">
+				<usage type="internet"/>
+				<name>Mineo (Sプラン)</name>
+				<username>mineo@k-opti.com</username>
+				<password>mineo</password>
+				<authentication method="chap"/>
+			</apn>
+		</gsm>
 	</provider>
 </country>
 
@@ -11224,11 +11368,18 @@ conceived.
 		<name>Orange</name>
 		<gsm>
 			<network-id mcc="226" mnc="10"/>
-			<apn value="internet">
+			<apn value="net">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
-				<dns>172.22.7.21</dns>
-				<dns>172.22.7.20</dns>
+				<name>Orange Internet</name>
+			</apn>
+			<apn value="mms">
+				<usage type="mms"/>
+				<name>Orange MMS (MMS)</name>
+				<username>mms</username>
+				<password>mms</password>
+				<mmsc>http://wap.mms.orange.ro:8002</mmsc>
+				<mmsproxy>62.217.247.252:8799</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
@@ -11827,30 +11978,6 @@ conceived.
 		</gsm>
 	</provider>
 	<provider>
-		<name>Glocalnet</name>
-		<gsm>
-			<network-id mcc="240" mnc="08"/>
-			<!-- http://glocalnet.se/mobiltbredband -->
-			<apn value="bredband.glocalnet.se">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<name>Mobilt Bredband</name>
-			</apn>
-			<!-- http://kundservice.glocalnet.se/Kundservice/Mobiltelefoni/Installningar/ -->
-			<apn value="internet.glocalnet.se">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<name>Glocalnet Internet</name>
-			</apn>
-			<apn value="services.glocalnet.se">
-				<usage type="mms"/>
-				<name>Glocalnet MMS</name>
-				<mmsc>http://mms</mmsc>
-				<mmsproxy>172.30.253.241:8799</mmsproxy>
-			</apn>
-		</gsm>
-	</provider>
-	<provider>
 		<name>Halebop</name>
 		<gsm>
 			<network-id mcc="240" mnc="01"/>
@@ -12052,33 +12179,6 @@ conceived.
 			<apn value="bredband.comhem.se">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
-			</apn>
-		</gsm>
-	</provider>
-	<provider>
-		<name>Parlino</name>
-		<gsm>
-			<network-id mcc="240" mnc="07"/>
-			<apn value="internet.parlino.se">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-			</apn>
-		</gsm>
-	</provider>
-	<provider>
-		<name>Universal Telecom</name>
-		<gsm>
-			<!-- http://www.uvtc.com/SWEDEN/internet/mobiltbredband/Default.aspx -->
-			<apn value="sp-internet">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<name>Mobilt Bredband</name>
-			</apn>
-			<!-- http://www.uvtc.com/sweden/Mobil/Faq/default.aspx -->
-			<apn value="internet.uvtc.com">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<name>Mobilt Internet</name>
 			</apn>
 		</gsm>
 	</provider>
@@ -13219,6 +13319,7 @@ conceived.
 			<network-id mcc="310" mnc="038"/>
 			<network-id mcc="310" mnc="090"/>
 			<network-id mcc="310" mnc="150"/>
+			<network-id mcc="310" mnc="280"/>
 			<network-id mcc="310" mnc="410"/>
 			<network-id mcc="310" mnc="560"/>
 			<network-id mcc="310" mnc="680"/>
@@ -13286,7 +13387,8 @@ conceived.
 			<apn value="fast.t-mobile.com">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
-				<name>LTE</name>
+				<name>T-Mobile LTE</name>
+				<mmsc>http://mms.msg.eng.t-mobile.com/mms/wapenc</mmsc>
 			</apn>
 			<apn value="epc.tmobile.com">
 				<plan type="postpaid"/>
@@ -13309,6 +13411,12 @@ conceived.
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 				<name>Internet with VPN (old)</name>
+			</apn>
+			<apn value="mobilenet">
+				<plan type="prepaid"/>
+				<usage type="internet"/>
+				<name>Broadband</name>
+				<mmsc>http://mms.msg.eng.t-mobile.com/mms/wapenc</mmsc>
 			</apn>
 		</gsm>
 	</provider>
@@ -13394,6 +13502,11 @@ conceived.
 		<gsm>
 			<network-id mcc="310" mnc="995"/>
 			<network-id mcc="311" mnc="480"/>
+			<visual-voicemail>
+				<standard type="vvm3"/>
+				<destination-number>900080006200</destination-number>
+				<carrier-prefix>//VZWVVM</carrier-prefix>
+			</visual-voicemail>
 			<apn value="vzwims">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
@@ -13945,6 +14058,30 @@ conceived.
 		</cdma>
 	</provider>
 	<provider>
+		<name>Ting</name>
+		<gsm>
+			<!-- Assignments taken from https://help.ting.com/hc/en-us/articles/205428698-GSM-Android-APN-setup-guide -->
+			<network-id mcc="310" mnc="240"/>
+			<!-- Mobile Data settings for X3 SIM card -->
+			<apn value="wireless.dish.com">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+				<name>Ting Data</name>
+			</apn>
+			<apn value="wireless.dish.com">
+				<usage type="mms"/>
+				<name>MMS</name>
+				<mmsc>http://wholesale.mmsmvno.com/mms/wapenc</mmsc>
+			</apn>
+			<!-- Tethering settings for X3 SIM card -->
+			<apn value="tethering.dish.com">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+				<name>Ting Data</name>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
 		<name>Leap Wireless</name>
 		<cdma/>
 	</provider>
@@ -14032,6 +14169,25 @@ conceived.
 	</provider>
 	<provider>
 		<!-- MVNO operating on AT&T's network -->
+		<name>AweSIM</name>
+		<gsm>
+			<network-id mcc="310" mnc="410"/>
+			<apn value="NXTGENPHONE">
+				<plan type="prepaid"/>
+				<usage type="internet"/>
+				<name>AweSIM Internet</name>
+			</apn>
+			<apn value="NXTGENPHONE">
+				<plan type="prepaid"/>
+				<usage type="mms"/>
+				<name>AweSIM MMS</name>
+				<mmsc>http://mmsc.mobile.att.net</mmsc>
+				<mmsproxy>proxy.mobile.att.net:80</mmsproxy>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
+		<!-- MVNO operating on AT&T's network -->
 		<name>Straight Talk</name>
 		<gsm>
 			<network-id mcc="310" mnc="410"/>
@@ -14050,11 +14206,6 @@ conceived.
 		<name>SpeedTalk Mobile</name>
 		<gsm>
 			<network-id mcc="310" mnc="260"/>
-			<apn value="mobilenet">
-				<plan type="prepaid"/>
-				<usage type="internet"/>
-				<name>Broadband</name>
-			</apn>
 			<apn value="wholesale">
 				<plan type="prepaid"/>
 				<usage type="mms"/>
@@ -14076,6 +14227,37 @@ conceived.
 			<apn value="data.lycamobile.com">
 				<plan type="prepaid"/>
 				<usage type="internet"/>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
+		<name>Mint Mobile</name>
+		<gsm>
+			<network-id mcc="310" mnc="260"/>
+			<visual-voicemail>
+				<standard type="cvvm"/>
+				<destination-number>127</destination-number>
+				<carrier-prefix>//VVM</carrier-prefix>
+			</visual-voicemail>
+			<apn value="wholesale">
+				<plan type="prepaid"/>
+				<usage type="internet"/>
+				<name>mint</name>
+				<mmsc>http://wholesale.mmsmvno.com/mms/wapenc</mmsc>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
+		<!-- MVNO operating on T-Mobile / Verizon -->
+		<name>US Mobile</name>
+		<gsm>
+			<network-id mcc="310" mnc="260"/>
+			<voicemail>123</voicemail>
+			<apn value="pwg">
+				<!-- T-Mobile network combined MMS / Cellular Data APN -->
+				<usage type="internet"/>
+				<name>US Mobile</name>
+				<mmsc>http://pwg.mmsmvno.com/mms/wapenc</mmsc>
 			</apn>
 		</gsm>
 	</provider>
