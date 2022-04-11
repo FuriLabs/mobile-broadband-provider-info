@@ -3,7 +3,7 @@ Upstream-Name: mobile-broadband-provider-info
 Source: https://wiki.gnome.org/Projects/NetworkManager/MobileBroadband/ServiceProviders
 
 Files: *
-Copyright: 2008-2019 Antti Kaijanmäki <antti@kaijanmaki.net>,
+Copyright: 2008-2022 Antti Kaijanmäki <antti@kaijanmaki.net>,
            Dan Williams <dcbw@redhat.com>, Jiří Klimeš <jklimes@redhat.com>
 License: public-domain
 
@@ -11,7 +11,7 @@ Files: debian/*
 Copyright: 2009 Daniel Baumann <daniel@debian.org>
            2009-2017 Bhavani Shankar <bhavi@ubuntu.com>
            2016 W. Martin Borgert <debacle@debian.org>
-           2019 Graham Inggs <ginggs@debian.org>
+           2019-2022 Graham Inggs <ginggs@debian.org>
 License: public-domain
 
 License: public-domain

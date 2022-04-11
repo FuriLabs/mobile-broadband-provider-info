@@ -1,6 +1,7 @@
 mobile-broadband-provider-info (20220315-1) UNRELEASED; urgency=medium
 
   * New upstream release
+  * Update debian/copyright
 
  -- Graham Inggs <ginggs@debian.org>  Mon, 11 Apr 2022 17:33:52 +0000
 
