@@ -55,6 +55,13 @@ conceived.
 				<usage type="internet"/>
 				<name>Mobiland Click!</name>
 			</apn>
+			<apn value="mms">
+				<usage type="mms"/>
+				<name>Andorra Telecom MMS</name>
+				<mmsc>http://mms.ad/mmsc</mmsc>
+				<mmsproxy>192.168.21.50:8080</mmsproxy>
+			</apn>
+
 		</gsm>
 	</provider>
 </country>
@@ -128,6 +135,13 @@ conceived.
 				<username>awcc</username>
 				<password>1111</password>
 			</apn>
+			<apn value="mms1">
+				<usage type="mms"/>
+				<name>AWCC MMS</name>
+				<mmsc>http://172.17.81.2:8002</mmsc>
+				<mmsproxy>172.17.81.2:8002</mmsproxy>
+			</apn>
+
 		</gsm>
 	</provider>
 </country>
@@ -161,6 +175,18 @@ conceived.
 				<name>Vodafone MMS</name>
 				<mmsc>http://mms1.live.vodafone.in/mms/</mmsc>
 				<mmsproxy>10.10.1.100:9401</mmsproxy>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
+		<name>Albania Mobile Communications (AMC)</name>
+		<gsm>
+			<network-id mcc="276" mnc="01"/>
+			<apn value="Internet">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+				<name>AMC internet</name>
+				<username>internet</username>
 			</apn>
 		</gsm>
 	</provider>
@@ -569,6 +595,7 @@ conceived.
 				<usage type="internet"/>
 				<username>lmat</username>
 				<password>plus</password>
+				<mmsc>http://lyca.mmsmvno.com/mms/wapenc</mmsc>
 			</apn>
 		</gsm>
 	</provider>
@@ -2974,10 +3001,10 @@ conceived.
 		<name>eTb</name>
 		<gsm>
 			<apn value="moviletb.net.co">
-			     <plan type="postpaid"/>
-			     <usage type="internet"/>
-			     <username>etb</username>
-			     <password>etb</password>
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+				<username>etb</username>
+				<password>etb</password>
 			</apn>
 		</gsm>
 	</provider>
@@ -4179,6 +4206,13 @@ conceived.
 				<username>CLIENTE</username>
 				<password>EUSKALTEL</password>
 			</apn>
+			<apn value="euskaltelmms.euskaltel.mobi">
+				<usage type="mms"/>
+				<name>Euskaltel MMS</name>
+				<mmsc>http://mms.euskaltel.mobi/</mmsc>
+				<mmsproxy>172.16.18.74</mmsproxy>
+			</apn>
+
 		</gsm>
 	</provider>
 	<provider>
@@ -5576,15 +5610,15 @@ conceived.
 
 <!-- Greenland -->
 <country code="gl">
-    <!-- http://www.tele.gl/da-DK/Privat/Info/Selvbetjening/Mobilopsaetning/Sider/ManuelOpsaetning.aspx -->
-    <provider>
-        <name>Tele Greenland A/S</name>
-        <gsm>
-             <apn value="internet">
+	<!-- http://www.tele.gl/da-DK/Privat/Info/Selvbetjening/Mobilopsaetning/Sider/ManuelOpsaetning.aspx -->
+	<provider>
+		<name>Tele Greenland A/S</name>
+		<gsm>
+			<apn value="internet">
 				<usage type="internet"/>
-             </apn>
-        </gsm>
-    </provider>
+			</apn>
+		</gsm>
+	</provider>
 </country>
 
 <!-- Greece -->
@@ -6495,6 +6529,9 @@ conceived.
 		<name>CellCom</name>
 		<gsm>
 			<network-id mcc="425" mnc="02"/>
+			<balance-check>
+				<ussd>*11777#</ussd>
+			</balance-check>
 			<apn value="internetg">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
@@ -6560,6 +6597,12 @@ conceived.
 				<dns>158.43.192.1</dns>
 				<dns>158.43.128.1</dns>
 			</apn>
+			<apn value="wap.orange.co.il">
+				<usage type="mms"/>
+				<name>MMS Partner</name>
+				<mmsc>http://192.168.220.15:8080/servlets/mms</mmsc>
+			</apn>
+
 		</gsm>
 	</provider>
 	<provider>
@@ -6593,6 +6636,15 @@ conceived.
 				<username>rl@3g</username>
 				<password>rl</password>
 			</apn>
+			<apn value="mms.rl">
+				<usage type="mms"/>
+				<name>Rami Levi MMS</name>
+				<username>rl@3g</username>
+				<password>rl</password>
+				<mmsc>http://mmsu.pelephone.net.il</mmsc>
+				<mmsproxy>10.170.9.54:9093</mmsproxy>
+			</apn>
+
 		</gsm>
 	</provider>
 	<provider>
@@ -6613,6 +6665,12 @@ conceived.
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 			</apn>
+			<apn value="data.youphone.co.il">
+				<usage type="mms"/>
+				<name>Multimedia Youphone</name>
+				<mmsc>http://192.168.220.15/servlets/mms</mmsc>
+			</apn>
+
 		</gsm>
 	</provider>
 </country>
@@ -13251,7 +13309,7 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
-    <provider>
+	<provider>
 		<name>Orange</name>
 		<gsm>
 			<network-id mcc="641" mnc="14"/>
@@ -13266,7 +13324,7 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
-    <provider>
+	<provider>
 		<name>UTL</name>
 		<gsm>
 			<network-id mcc="641" mnc="11"/>
@@ -13288,7 +13346,7 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
-    <provider>
+	<provider>
 		<name>Warid</name>
 		<gsm>
 			<network-id mcc="641" mnc="22"/>
@@ -13299,7 +13357,7 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
-    <provider>
+	<provider>
 		<name>Zain</name>
 		<gsm>
 			<network-id mcc="641" mnc="01"/>
@@ -13322,6 +13380,20 @@ conceived.
 			<network-id mcc="310" mnc="280"/>
 			<network-id mcc="310" mnc="410"/>
 			<network-id mcc="310" mnc="560"/>
+			<network-id mcc="310" mnc="680"/>
+			<network-id mcc="310" mnc="016"/>
+			<network-id mcc="310" mnc="070"/>
+			<network-id mcc="310" mnc="080"/>
+			<network-id mcc="310" mnc="090"/>
+			<network-id mcc="310" mnc="380"/>
+			<network-id mcc="310" mnc="670"/>
+			<network-id mcc="310" mnc="950"/>
+			<network-id mcc="311" mnc="070"/>
+			<network-id mcc="311" mnc="090"/>
+			<network-id mcc="311" mnc="180"/>
+			<network-id mcc="311" mnc="190"/>
+			<network-id mcc="312" mnc="090"/>
+			<network-id mcc="310" mnc="670"/>
 			<network-id mcc="310" mnc="680"/>
 			<voicemail>+17249209990</voicemail>
 			<visual-voicemail>
@@ -13500,8 +13572,20 @@ conceived.
 	<provider>
 		<name>Verizon</name>
 		<gsm>
-			<network-id mcc="310" mnc="995"/>
+			<network-id mcc="310" mnc="010"/>
+			<network-id mcc="310" mnc="011"/>
+			<network-id mcc="310" mnc="012"/>
 			<network-id mcc="311" mnc="480"/>
+			<network-id mcc="311" mnc="480"/>
+			<network-id mcc="311" mnc="481"/>
+			<network-id mcc="311" mnc="482"/>
+			<network-id mcc="311" mnc="483"/>
+			<network-id mcc="311" mnc="484"/>
+			<network-id mcc="311" mnc="485"/>
+			<network-id mcc="311" mnc="486"/>
+			<network-id mcc="311" mnc="487"/>
+			<network-id mcc="311" mnc="488"/>
+			<network-id mcc="311" mnc="489"/>
 			<visual-voicemail>
 				<standard type="vvm3"/>
 				<destination-number>900080006200</destination-number>
@@ -13518,6 +13602,7 @@ conceived.
 				<name>4G LTE Contract</name>
 				<dns>66.174.92.14</dns>
 				<dns>69.78.96.14</dns>
+				<mmsc>http://mms.vtext.com/servlets/mms</mmsc>
 			</apn>
 			<apn value="vzwapp">
 				<plan type="postpaid"/>
@@ -14365,7 +14450,7 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
-    <provider>
+	<provider>
 		<name>UMS</name>
 		<gsm>
 			<network-id mcc="434" mnc="07"/>
@@ -14595,6 +14680,12 @@ conceived.
 				<dns>196.7.0.138</dns>
 				<dns>196.7.142.132</dns>
 			</apn>
+			<apn value="mms">
+				<usage type="mms"/>
+				<name>Cell-C MMS</name>
+				<mmsc>http://mms.cmobile.co.za/</mmsc>
+				<mmsproxy>196.31.116.250</mmsproxy>
+			</apn>
 		</gsm>
 	</provider>
 	<provider>
@@ -14615,6 +14706,14 @@ conceived.
 				<usage type="internet"/>
 				<dns>196.11.240.241</dns>
 				<dns>209.212.97.1</dns>
+			</apn>
+			<apn value="mymtn">
+				<usage type="mms"/>
+				<name>MTN MMS</name>
+				<username>mtnmms</username>
+				<password>mtnmms</password>
+				<mmsc>http://mms.mtn.co.za/mms/wapenc</mmsc>
+				<mmsproxy>196.11.240.211:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
