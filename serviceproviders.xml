@@ -5100,6 +5100,25 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
+	<provider>
+		<name>Simplus</name>
+		<gsm>
+			<network-id mcc="208" mnc="26"/>
+			<network-id mcc="208" mnc="260"/>
+			<voicemail>777</voicemail>
+			<apn value="fnetnrj">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+				<name>NRJWEB</name>
+			</apn>
+			<apn value="mmsnrj">
+				<usage type="mms"/>
+				<name>NRJMMS</name>
+				<mmsc>http://mmsnrj</mmsc>
+				<mmsproxy>10.143.156.5:8080</mmsproxy>
+			</apn>
+		</gsm>
+	</provider>
 </country>
 
 <!-- Britain -->
@@ -6882,6 +6901,8 @@ conceived.
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 				<name>New GPRS/3G</name>
+				<username>MSISDN</username>
+				<password>MSISDN</password>
 			</apn>
 
 			<apn value="bsnlwap">
@@ -9928,6 +9949,18 @@ conceived.
 		</gsm>
 	</provider>
 	<provider>
+		<!-- MVNO operating on T-Mobile's network -->
+		<name>Simpel</name>
+		<gsm>
+			<network-id mcc="204" mnc="16"/>
+			<apn value="internet.access.nl">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+				<name>Simpel</name>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
 		<name>Orange</name>
 		<gsm>
 			<network-id mcc="204" mnc="20"/>
@@ -9998,17 +10031,6 @@ conceived.
 		<gsm>
 			<network-id mcc="204" mnc="08"/>
 			<apn value="internet">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-			</apn>
-		</gsm>
-	</provider>
-	<provider>
-		<!-- MVNO operating on T-Mobile's network -->
-		<name>Simpel</name>
-		<gsm>
-			<network-id mcc="204" mnc="99"/>
-			<apn value="internet.access.nl">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 			</apn>
@@ -14833,6 +14855,21 @@ conceived.
 			<apn value="internet">
 				<plan type="prepaid"/>
 				<usage type="internet"/>
+			</apn>
+		</gsm>
+	</provider>
+</country>
+
+<!-- Kosovo -->
+<country code="xk">
+	<provider>
+		<name>IPKO</name>
+		<gsm>
+			<network-id mcc="221" mnc="02"/>
+			<apn value="ipko">
+				<plan type="prepaid"/>
+				<usage type="internet"/>
+				<name>ipko</name>
 			</apn>
 		</gsm>
 	</provider>
