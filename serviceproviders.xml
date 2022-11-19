@@ -3448,6 +3448,7 @@ conceived.
 			<apn value="internet.t-d1.de">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
+				<name>IPv4-only without NAT</name>
 				<password>t-d1</password>
 				<dns>193.254.160.1</dns>
 				<dns>193.254.160.130</dns>
@@ -3457,6 +3458,7 @@ conceived.
 			<apn value="internet.t-mobile">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
+				<name>Dualstack with MMS and fixed DNSv4</name>
 				<username>t-mobile</username>
 				<password>tm</password>
 				<dns>10.74.83.22</dns>
@@ -3469,12 +3471,14 @@ conceived.
 			<apn value="internet.v6.telekom">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
+				<name>IPv6-only</name>
 			</apn>
 			<!-- https://www.telekom.de/hilfe/mobilfunk-mobiles-internet/mobiles-internet-e-mail/apn-mobilfunk/wie-lauten-die-apn-fuer-mobilfunk -->
 			<!-- dual stack or ipv4-only APN, type ipv4v6 or ipv4 -->
 			<apn value="internet.telekom">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
+				<name>Default dualstack</name>
 			</apn>
 			<apn value="iot.telekom.net">
 				<plan type="prepaid"/>
@@ -4832,6 +4836,15 @@ conceived.
 		<gsm>
 			<!-- http://mobile.free.fr/faq-config-apn-autres.html -->
 			<network-id mcc="208" mnc="15"/>
+			<voicemail>666</voicemail>
+			<visual-voicemail>
+				<standard type="proprietary"/>
+				<destination-number>2050</destination-number>
+				<carrier-prefix>//VVM</carrier-prefix>
+			</visual-voicemail>
+			<balance-check>
+				<sms text="conso">555</sms>
+			</balance-check>
 			<apn value="free">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
@@ -5136,6 +5149,40 @@ conceived.
 		</gsm>
 	</provider>
 	<provider>
+		<name>EE</name>
+		<gsm>
+			<network-id mcc="234" mnc="30"/>
+			<network-id mcc="234" mnc="33"/>
+			<network-id mcc="234" mnc="34"/>
+			<network-id mcc="234" mnc="86"/>
+
+			<!-- https://ee.co.uk/help/help-new/getting-started-and-upgrading/using-your-phone-features/how-do-i-use-voicemail -->
+			<voicemail>222</voicemail>
+			<!-- https://ee.co.uk/help/help-new/billing-usage-and-top-up/topping-up-and-balance/how-can-i-check-my-balance -->
+			<balance-check>
+				<dtmf>150</dtmf>
+				<sms text="BALANCE">150</sms>
+				<sms text="APP">150</sms>
+			</balance-check>
+			<!-- https://setup-ee.wdsglobal.com/internet?step=modelselection.vm&contractId=230&countryId=36&networkId=2027&manufacturerId=475&captchaEnabled=false&phoneId=5872 -->
+			<apn value="everywhere">
+				<usage type="internet"/>
+				<name>EE Internet</name>
+				<username>eesecure</username>
+				<password>secure</password>
+			</apn>
+			<!-- https://ee.co.uk/help/help-new/phones-and-devices/ee/robin#calls-messaging-and-email/add-mms-apn -->
+			<apn value="eezone">
+				<usage type="mms"/>
+				<name>EE MMS</name>
+				<username>eesecure</username>
+				<password>secure</password>
+				<mmsc>http://mms/</mmsc>
+				<mmsproxy>149.254.201.135:8080</mmsproxy>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
 		<name>Lycamobile</name>
 		<gsm>
 			<network-id mcc="234" mnc="26"/>
@@ -5249,32 +5296,6 @@ conceived.
 				<gateway>212.183.137.12:8799</gateway>
 				<username>wap</username>
 				<password>wap</password>
-			</apn>
-		</gsm>
-	</provider>
-	<provider>
-		<name>T-Mobile</name>
-		<gsm>
-			<network-id mcc="234" mnc="30"/>
-			<voicemail>222</voicemail>
-			<balance-check>
-				<dtmf>150</dtmf>
-				<sms text="BA">150</sms>
-				<sms text="AL">150</sms>
-			</balance-check>
-			<apn value="general.t-mobile.uk">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<username>User</username>
-				<password>mms</password>
-				<dns>149.254.201.126</dns>
-				<dns>149.254.192.126</dns>
-			</apn>
-			<apn value="general.t-mobile.uk">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<dns>149.254.230.7</dns>
-				<dns>149.254.199.126</dns>
 			</apn>
 		</gsm>
 	</provider>
@@ -5406,44 +5427,6 @@ conceived.
 				<name>Handsets</name>
 				<dns>172.30.139.17</dns>
 				<dns>172.31.139.17</dns>
-			</apn>
-		</gsm>
-	</provider>
-	<provider>
-		<name>Orange</name>
-		<gsm>
-			<network-id mcc="234" mnc="33"/>
-			<network-id mcc="234" mnc="34"/>
-			<voicemail>123</voicemail>
-			<balance-check>
-				<dtmf>453</dtmf>
-			</balance-check>
-			<apn value="orangeinternet">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<name>Contract</name>
-				<username>orange</username>
-				<password>orange</password>
-				<dns>193.35.133.10</dns>
-				<dns>193.35.134.10</dns>
-			</apn>
-			<apn value="internetvpn">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<name>Contract (with VPN)</name>
-				<username>orange</username>
-				<password>orange</password>
-				<dns>193.35.133.10</dns>
-				<dns>193.35.134.10</dns>
-			</apn>
-			<apn value="orangewap">
-				<plan type="postpaid"/>
-				<usage type="wap"/>
-				<name>Orange WAP</name>
-				<username>orange</username>
-				<password>multimedia</password>
-				<dns>158.43.192.1</dns>
-				<dns>158.43.128.1</dns>
 			</apn>
 		</gsm>
 	</provider>
@@ -6818,6 +6801,7 @@ conceived.
 			<network-id mcc="404" mnc="90"/>
 			<network-id mcc="404" mnc="92"/>
 			<network-id mcc="404" mnc="93"/>
+			<network-id mcc="404" mnc="95"/>
 			<network-id mcc="404" mnc="96"/>
 			<network-id mcc="404" mnc="97"/>
 			<network-id mcc="404" mnc="98"/>
@@ -13422,34 +13406,27 @@ conceived.
 				<standard type="proprietary"/>
 				<destination-number>94183567</destination-number>
 			</visual-voicemail>
-			<!-- http://www.wireless.att.com/answer-center/main.jsp?solutionId=35078&t=solutionTab -->
-			<apn value="wap.cingular">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<name>MEdia Net (phones)</name>
+			<!-- Assignments taken from https://www.att.com/support/article/wireless/KM1062162/ -->
+			<apn value="NXTGENPHONE">
+				<usage type="mms-internet-hipri"/>
+				<name>NXTGENPHONE</name>
+				<gateway>proxy.mobile.att.net:80</gateway>
+				<mmsc>http://mmsc.mobile.att.net</mmsc>
+				<mmsproxy>proxy.mobile.att.net:80</mmsproxy>
 			</apn>
-			<apn value="Broadband">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<name>LaptopConnect (data cards)</name>
+			<apn value="ENHANCEDPHONE">
+				<usage type="mms-internet-hipri"/>
+				<name>ENHANCEDPHONE</name>
+				<mmsc>http://mmsc.mobile.att.net</mmsc>
+				<mmsproxy>proxy.mobile.att.net:80</mmsproxy>
 			</apn>
-			<apn value="isp.cingular">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<name>Data Connect (old)</name>
+			<apn value="NRPHONE">
+				<usage type="mms-internet-hipri-fota"/>
+				<name>NRPHONE</name>
 			</apn>
-			<apn value="pta">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<name>LTE</name>
-			</apn>
-			<apn value="wap.cingular">
-				<usage type="mms"/>
-				<name>AT&amp;T MMS</name>
-				<username>WAP@CINGULARGPRS.COM</username>
-				<password>CINGULAR1</password>
-				<mmsc>http://mmsc.cingular.com</mmsc>
-				<mmsproxy>wireless.cingular.com:80</mmsproxy>
+			<apn value="broadband">
+				<usage type="mms-internet-hipri-fota"/>
+				<name>ATT Broadband</name>
 			</apn>
 		</gsm>
 	</provider>
@@ -14170,6 +14147,11 @@ conceived.
 			<!-- Assignments taken from https://help.ting.com/hc/en-us/articles/205428698-GSM-Android-APN-setup-guide -->
 			<network-id mcc="310" mnc="240"/>
 			<!-- Mobile Data settings for X3 SIM card -->
+			<visual-voicemail>
+				<standard type="cvvm"/>
+				<destination-number>122</destination-number>
+				<carrier-prefix>//VVM</carrier-prefix>
+			</visual-voicemail>
 			<apn value="wireless.dish.com">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
