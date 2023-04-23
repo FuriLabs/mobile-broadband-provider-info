@@ -1,10 +1,10 @@
-mobile-broadband-provider-info (20230416-1) UNRELEASED; urgency=medium
+mobile-broadband-provider-info (20230416-1) unstable; urgency=medium
 
   * New upstream release
   * Update debian/copyright
   * Bump Standards-Version to 4.6.2, no changes
 
- -- Graham Inggs <ginggs@debian.org>  Sun, 23 Apr 2023 12:25:26 +0000
+ -- Graham Inggs <ginggs@debian.org>  Sun, 23 Apr 2023 12:33:14 +0000
 
 mobile-broadband-provider-info (20221107-1) unstable; urgency=medium
 
