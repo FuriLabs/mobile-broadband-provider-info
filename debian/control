@@ -4,6 +4,7 @@ Priority: optional
 Maintainer: Graham Inggs <ginggs@debian.org>
 Build-Depends: debhelper-compat (= 13),
                libxml2-utils,
+               meson (>= 1.0.0),
                xsltproc
 Standards-Version: 4.6.2
 Rules-Requires-Root: no
