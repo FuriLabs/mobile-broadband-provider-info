@@ -1,3 +1,4 @@
 version=4
-https://gitlab.gnome.org/GNOME/@PACKAGE@/tags \
-  .*/@PACKAGE@@ANY_VERSION@@ARCHIVE_EXT@
+opts="searchmode=plain" \
+ https://gitlab.gnome.org/GNOME/@PACKAGE@/tags?sort=updated_desc \
+ -/archive/v?\d[\d.]+/@PACKAGE@-@ANY_VERSION@@ARCHIVE_EXT@

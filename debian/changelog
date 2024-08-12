@@ -1,6 +1,7 @@
 mobile-broadband-provider-info (20240407-1) UNRELEASED; urgency=medium
 
   * New upstream release
+  * Update debian/watch
 
  -- Graham Inggs <ginggs@ubuntu.com>  Thu, 02 May 2024 09:46:11 +0000
 
