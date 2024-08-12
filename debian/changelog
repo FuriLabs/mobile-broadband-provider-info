@@ -1,4 +1,4 @@
-mobile-broadband-provider-info (20240407-1) UNRELEASED; urgency=medium
+mobile-broadband-provider-info (20240407-1) unstable; urgency=medium
 
   * New upstream release
   * Update debian/watch
@@ -6,7 +6,7 @@ mobile-broadband-provider-info (20240407-1) UNRELEASED; urgency=medium
   * Update debian/copyright
   * Bump Standards-Version to 4.7.0, no changes
 
- -- Graham Inggs <ginggs@ubuntu.com>  Thu, 02 May 2024 09:46:11 +0000
+ -- Graham Inggs <ginggs@debian.org>  Mon, 12 Aug 2024 16:42:36 +0000
 
 mobile-broadband-provider-info (20230416-1) unstable; urgency=medium
 
