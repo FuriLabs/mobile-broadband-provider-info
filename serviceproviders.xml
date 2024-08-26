@@ -3316,7 +3316,7 @@ conceived.
 		<gsm>
 			<!-- http://www.bildmobil.de/info_handyeinstellungen.html -->
 			<network-id mcc="262" mnc="02"/>
-			<apn value="access.vodafone.de">
+			<apn value="web.vodafone.de">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 				<name>BILD Mobilportal</name>
