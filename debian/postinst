@@ -1,0 +1,27 @@
+#!/bin/sh
+
+MM_RESTART=false
+OFONO_RESTART=false
+
+if systemctl is-active --quiet ModemManager; then
+    MM_RESTART=true
+    systemctl stop ModemManager
+fi
+
+if systemctl is-active --quiet ofono; then
+    OFONO_RESTART=true
+    systemctl stop ofono
+fi
+
+# Get rid of the context cache
+if [ -d /var/lib/ofono ]; then
+    find /var/lib/ofono -name "gprs" -exec rm -f {} \;
+fi
+
+if [ "$OFONO_RESTART" = true ]; then
+    systemctl start ofono
+fi
+
+if [ "$MM_RESTART" = true ]; then
+    systemctl start ModemManager
+fi
