@@ -1,0 +1,8 @@
+#!/bin/sh
+
+set -e
+
+# get rid of the context cache
+if [ -d /var/lib/ofono ]; then
+    find /var/lib/ofono -name "gprs" -exec rm -f {} \;
+fi
