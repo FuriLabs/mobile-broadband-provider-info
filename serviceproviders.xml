@@ -3521,7 +3521,7 @@ conceived.
 			<balance-top-up>
 				<ussd replacement="CODE">*101*CODE#</ussd>
 			</balance-top-up>
-			<apn value="internet.t-mobile">
+			<apn value="internet.telekom">
 				<plan type="prepaid"/>
 				<usage type="internet"/>
 				<name>Prepaid Contracts</name>
