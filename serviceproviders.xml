@@ -14456,6 +14456,19 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
+	<provider primary="false">
+		<!-- MVNO operating on AT&T -->
+		<name>US Mobile (Dark Star)</name>
+		<gsm>
+			<network-id mcc="310" mnc="410"/>
+			<apn value="ereseller">
+				<!-- T-Mobile network combined MMS / Cellular Data APN -->
+				<usage type="internet"/>
+				<name>US Mobile (Dark Star)</name>
+				<mmsc>http://mmsc.mobile.att.net</mmsc>
+			</apn>
+		</gsm>
+	</provider>
 </country>
 
 <country code="uy">
