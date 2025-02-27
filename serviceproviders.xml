@@ -14440,15 +14440,19 @@ conceived.
 	</provider>
 	<provider primary="false">
 		<!-- MVNO operating on T-Mobile / Verizon -->
-		<name>US Mobile</name>
+		<name>US Mobile (Light Speed)</name>
 		<gsm>
 			<network-id mcc="310" mnc="260"/>
-			<voicemail>123</voicemail>
-			<apn value="pwg">
+			<visual-voicemail>
+				<standard type="cvvm"/>
+				<destination-number>122</destination-number>
+				<carrier-prefix>//VVM</carrier-prefix>
+			</visual-voicemail>
+			<apn value="wholesale">
 				<!-- T-Mobile network combined MMS / Cellular Data APN -->
 				<usage type="internet"/>
-				<name>US Mobile</name>
-				<mmsc>http://pwg.mmsmvno.com/mms/wapenc</mmsc>
+				<name>US Mobile (Light Speed)</name>
+				<mmsc>http://wholesale.mmsmvno.com/mms/wapenc</mmsc>
 			</apn>
 		</gsm>
 	</provider>
