@@ -1,3 +1,13 @@
+mobile-broadband-provider-info (20250613-1) experimental; urgency=medium
+
+  * Upload to experimental
+  * New upstream version 20250613
+    (Closes: #1107974)
+  * Add salsa-ci
+  * Add myself to uploaders. Thanks Graham!
+
+ -- Guido Günther <agx@sigxcpu.org>  Sat, 21 Jun 2025 14:51:27 +0200
+
 mobile-broadband-provider-info (20240407-1) unstable; urgency=medium
 
   * New upstream release
