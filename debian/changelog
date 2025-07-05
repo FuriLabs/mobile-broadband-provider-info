@@ -1,3 +1,9 @@
+mobile-broadband-provider-info (20250613-2) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Graham Inggs <ginggs@debian.org>  Sat, 05 Jul 2025 09:40:30 +0000
+
 mobile-broadband-provider-info (20250613-1) experimental; urgency=medium
 
   * Upload to experimental
