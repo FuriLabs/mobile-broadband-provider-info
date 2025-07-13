@@ -2327,7 +2327,7 @@ conceived.
 				<usage type="internet"/>
 				<name>Rogers Tethering</name>
 			</apn>
-			<apn value="ltemobile.apn">
+			<apn value="ltedata.apn">
 				<usage type="mms"/>
 				<name>Rogers MMS</name>
 				<username></username>
