@@ -13463,7 +13463,14 @@ conceived.
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 				<name>T-Mobile LTE</name>
+			</apn>
+			<apn value="mobilenet">
+				<usage type="mms"/>
+				<name>T-Mobile MMS</name>
+				<username></username>
+				<password></password>
 				<mmsc>http://mms.msg.eng.t-mobile.com/mms/wapenc</mmsc>
+				<mmsproxy></mmsproxy>
 			</apn>
 			<apn value="epc.tmobile.com">
 				<plan type="postpaid"/>
