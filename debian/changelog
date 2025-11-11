@@ -1,10 +1,18 @@
-mobile-broadband-provider-info (20251101-1~1.gbp835489) UNRELEASED; urgency=medium
-
-  ** SNAPSHOT build @835489453a0c5af281e6698787c8eb12d52b77e5 **
+mobile-broadband-provider-info (20251101-1) unstable; urgency=medium
 
   * New upstream version 20251101
+    * Add support for emergency number information
+    * Add emergency number information for AT, BE, CH, DE, JP, TW, US
+    * Add cbd channel information for IL
+    * New providers
+      - de: Willkommen
+      - jp: provo
+    * Updated providers
+      - ar: Claro
+      - ca: Rogers
+      - lu: Tango
 
- -- Guido Günther <agx@sigxcpu.org>  Tue, 11 Nov 2025 17:51:48 +0100
+ -- Guido Günther <agx@sigxcpu.org>  Tue, 11 Nov 2025 17:52:35 +0100
 
 mobile-broadband-provider-info (20250613-2) unstable; urgency=medium
 
