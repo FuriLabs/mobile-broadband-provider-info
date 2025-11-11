@@ -414,14 +414,12 @@ conceived.
 			<network-id mcc="722" mnc="310"/>
 			<network-id mcc="722" mnc="320"/>
 			<network-id mcc="722" mnc="330"/>
-			<apn value="gprs.claro.com.ar">
+			<apn value="igprs.claro.com.ar">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
-				<name>3G Internet</name>
-				<username>clarogprs</username>
-				<password>clarogprs999</password>
-				<dns>170.51.255.100</dns>
-				<dns>170.51.242.18</dns>
+				<name>Claro AR</name>
+				<username></username>
+				<password></password>
 			</apn>
 			<apn value="internet.ctimovil.com.ar">
 				<plan type="postpaid"/>
@@ -465,6 +463,13 @@ conceived.
 
 <country code="at">
 	<name>Austria</name>
+	<emergency-numbers>
+		<emergency-number number="112">
+			<callee type="ambulance"/>
+			<callee type="fire-brigade"/>
+			<callee type="police"/>
+		</emergency-number>
+	</emergency-numbers>
 	<provider>
 		<name>A1/Telekom Austria</name>
 		<gsm>
@@ -1514,6 +1519,13 @@ conceived.
 
 <country code="be">
 	<name>Belgium</name>
+	<emergency-numbers>
+		<emergency-number number="112">
+			<callee type="ambulance"/>
+			<callee type="police"/>
+			<callee type="fire-brigade"/>
+		</emergency-number>
+	</emergency-numbers>
 	<provider>
 		<name>Lycamobile</name>
 		<gsm>
@@ -2327,14 +2339,6 @@ conceived.
 		<name>Rogers</name>
 		<gsm>
 			<network-id mcc="302" mnc="720"/>
-			<apn value="internet.com">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<username>wapuser1</username>
-				<password>wap</password>
-				<dns>207.181.101.4</dns>
-				<dns>207.181.101.5</dns>
-			</apn>
 			<apn value="ltemobile.apn">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
@@ -2345,13 +2349,13 @@ conceived.
 				<usage type="internet"/>
 				<name>Rogers Tethering</name>
 			</apn>
-			<apn value="media.com">
+			<apn value="ltedata.apn">
 				<usage type="mms"/>
-				<name>Rogers Media</name>
-				<username>media</username>
-				<password>mda01</password>
+				<name>Rogers MMS</name>
+				<username></username>
+				<password></password>
 				<mmsc>http://mms.gprs.rogers.com</mmsc>
-				<mmsproxy>10.128.1.69:80</mmsproxy>
+				<mmsproxy>mmsproxy.rogers.com</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
@@ -2586,6 +2590,17 @@ conceived.
 
 <country code="ch">
 	<name>Switzerland</name>
+	<emergency-numbers>
+		<emergency-number number="114">
+			<callee type="ambulance"/>
+		</emergency-number>
+		<emergency-number number="117">
+			<callee type="police"/>
+		</emergency-number>
+		<emergency-number number="118">
+			<callee type="fire-brigade"/>
+		</emergency-number>
+	</emergency-numbers>
 	<provider>
 		<name>Lycamobile</name>
 		<gsm>
@@ -3296,6 +3311,13 @@ conceived.
 			<channels start="4381" end="4381"/>
 		</level>
 	</cbs>
+	<emergency-numbers>
+		<emergency-number number="112">
+			<callee type="police"/>
+			<callee type="ambulance"/>
+			<callee type="fire-brigade"/>
+		</emergency-number>
+	</emergency-numbers>
 	<provider>
 		<name>AldiTalk/MedionMobile</name>
 		<gsm>
@@ -3713,6 +3735,25 @@ conceived.
 				<name>Mobile Web</name>
 				<username>D2</username>
 				<password>Web</password>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
+		<name>Willkommen</name>
+		<gsm>
+			<!-- Vodafone network -->
+			<network-id mcc="262" mnc="02"/>
+			<network-id mcc="262" mnc="23"/>
+
+			<voicemail>5500</voicemail>
+			<balance-check>
+				<ussd>*100#</ussd>
+			</balance-check>
+
+			<apn value="web.vodafone.de">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+				<name>Mobile Broadband</name>
 			</apn>
 		</gsm>
 	</provider>
@@ -6689,6 +6730,35 @@ conceived.
 
 <country code="il">
 	<name>Israel</name>
+	<cbs>
+		<level type="presidential">
+			<!-- 919 Hebrew, 920 English, 921 Russian, 922 Arabic -->
+			<channels start="919" end="922"/>
+			<!-- Future use per 2014 document -->
+			<channels start="923" end="928"/>
+		</level>
+		<level type="extreme">
+			<channels start="4370" end="4370"/>
+		</level>
+		<level type="severe">
+			<channels start="4371" end="4372"/>
+		</level>
+		<level type="public-safety">
+			<!-- technically declared as information -->
+			<channels start="4373" end="4378"/>
+		</level>
+		<level type="amber">
+			<channels start="4379" end="4379"/>
+		</level>
+		<level type="test">
+			<!-- general system test -->
+			<channels start="4380" end="4380"/>
+			<!-- training -->
+			<channels start="4381" end="4381"/>
+			<!-- future use -->
+			<channels start="4382" end="4382"/>
+		</level>
+	</cbs>
 	<provider>
 		<name>CellCom</name>
 		<gsm>
@@ -7582,6 +7652,15 @@ conceived.
 
 <country code="jp">
 	<name>Japan</name>
+	<emergency-numbers>
+		<emergency-number number="119">
+			<callee type="ambulance"/>
+			<callee type="fire-brigade"/>
+		</emergency-number>
+		<emergency-number number="110">
+			<callee type="police"/>
+		</emergency-number>
+	</emergency-numbers>
 	<provider>
 		<name>Softbank Mobile</name>
 		<gsm>
@@ -7814,6 +7893,17 @@ conceived.
 				<username>mineo@k-opti.com</username>
 				<password>mineo</password>
 				<authentication method="chap"/>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
+		<!-- MVNO operating on au(KDDI) network -->
+		<name>povo</name>
+		<gsm>
+			<network-id mcc="440" mnc="51"/>
+			<apn value="povo.jp">
+				<usage type="internet"/>
+				<name>povo</name>
 			</apn>
 		</gsm>
 	</provider>
@@ -8576,19 +8666,12 @@ conceived.
 		<name>Tango</name>
 		<gsm>
 			<network-id mcc="270" mnc="77"/>
-			<apn value="hspa">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<name>hspa</name>
-				<username>tango</username>
-				<password>tango</password>
-			</apn>
 			<apn value="internet">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 				<name>internet</name>
-				<username>tango</username>
-				<password>tango</password>
+				<username></username>
+				<password></password>
 				<dns>212.66.70.3</dns>
 				<dns>212.66.75.7</dns>
 			</apn>
@@ -12859,6 +12942,15 @@ conceived.
 
 <country code="tw">
 	<name>Taiwan</name>
+	<emergency-numbers>
+		<emergency-number number="119">
+			<callee type="ambulance"/>
+			<callee type="fire-brigade"/>
+		</emergency-number>
+		<emergency-number number="110">
+			<callee type="police"/>
+		</emergency-number>
+	</emergency-numbers>
 	<provider>
 		<name>Chunghwa Telecom (emome)</name>
 		<name xml:lang="zh">中華電信 (emome)</name>
@@ -13351,6 +13443,13 @@ conceived.
 			<channels start="4379" end="4379"/>
 		</level>
 	</cbs>
+	<emergency-numbers>
+		<emergency-number number="911">
+			<callee type="police"/>
+			<callee type="ambulance"/>
+			<callee type="fire-brigade"/>
+		</emergency-number>
+	</emergency-numbers>
 	<provider>
 		<name>AT&amp;T</name>
 		<gsm>

@@ -1,3 +1,11 @@
+mobile-broadband-provider-info (20251101-1~1.gbp835489) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @835489453a0c5af281e6698787c8eb12d52b77e5 **
+
+  * New upstream version 20251101
+
+ -- Guido Günther <agx@sigxcpu.org>  Tue, 11 Nov 2025 17:51:48 +0100
+
 mobile-broadband-provider-info (20250613-2) unstable; urgency=medium
 
   * Upload to unstable
