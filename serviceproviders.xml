@@ -14440,7 +14440,7 @@ conceived.
 	</provider>
 	<provider primary="false">
 		<!-- MVNO operating on T-Mobile / Verizon -->
-		<name>US Mobile (Light Speed)</name>
+		<name>US Mobile</name>
 		<gsm>
 			<network-id mcc="310" mnc="260"/>
 			<network-id mcc="310" mnc="240"/>
