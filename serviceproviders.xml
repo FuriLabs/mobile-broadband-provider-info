@@ -14443,6 +14443,7 @@ conceived.
 		<name>US Mobile (Light Speed)</name>
 		<gsm>
 			<network-id mcc="310" mnc="260"/>
+			<network-id mcc="310" mnc="240"/>
 			<visual-voicemail>
 				<standard type="cvvm"/>
 				<destination-number>122</destination-number>
