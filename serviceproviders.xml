@@ -14452,7 +14452,14 @@ conceived.
 				<!-- T-Mobile network combined MMS / Cellular Data APN -->
 				<usage type="internet"/>
 				<name>US Mobile (Light Speed)</name>
-				<mmsc>http://wholesale.mmsmvno.com/mms/wapenc</mmsc>
+			</apn>
+			<apn value="mobilenet">
+				<usage type="mms"/>
+				<name> US Mobile MMS (Light Speed)</name>
+				<username></username>
+				<password></password>
+				<mmsc>http://mms.msg.eng.t-mobile.com/mms/wapenc</mmsc>
+				<mmsproxy></mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
