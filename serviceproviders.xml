@@ -5025,8 +5025,8 @@ conceived.
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 				<name>Free-Mobile</name>
-				<username>free</username>
-				<password>free</password>
+				<username></username>
+				<password></password>
 			</apn>
 			<apn value="mmsfree">
 				<plan type="postpaid"/>
