@@ -10312,6 +10312,7 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
+	<!-- https://support.telavox.com/sv_SE/sim-och-esim/apn-norge -->
 	<provider>
 		<name>Telavox</name>
 		<gsm>
