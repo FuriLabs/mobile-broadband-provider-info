@@ -13,6 +13,12 @@ if systemctl is-active --quiet ofono; then
     systemctl stop ofono
 fi
 
+# Remove NM connection data
+# this should preferrably be updated by ofono2mm instead if ofono's APN is different from existing connection
+if [ -d /etc/NetworkManager/system-connections/ ]; then
+    grep -rilZ "type=gsm" /etc/NetworkManager/system-connections/ | xargs -0 -r rm -f
+fi
+
 # Get rid of the context cache
 if [ -d /var/lib/ofono ]; then
     find /var/lib/ofono -name "gprs" -exec rm -f {} \;
