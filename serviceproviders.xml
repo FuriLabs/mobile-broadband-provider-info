@@ -3528,6 +3528,28 @@ conceived.
 		</gsm>
 	</provider>
 	<provider>
+		<name>Telekom.de</name>
+		<gsm>
+			<network-id mcc="262" mnc="01"/>
+
+			<apn value="internet.telekom">
+				<usage type="internet"/>
+				<name>Telekom Internet</name>
+				<username>telekom</username>
+				<password>telekom</password>
+			</apn>
+
+			<apn value="internet.t-mobile">
+				<usage type="mms"/>
+				<name>Telekom MMS</name>
+				<username>telekom</username>
+				<password>telekom</password>
+				<mmsc>http://mms.t-mobile.de/servlets/mms</mmsc>
+				<mmsproxy>172.28.23.131:8008</mmsproxy>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
 		<name>T-Mobile(Telekom)</name>
 		<gsm>
 			<network-id mcc="262" mnc="01"/>
