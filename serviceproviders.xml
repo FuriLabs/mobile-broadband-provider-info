@@ -1545,6 +1545,16 @@ conceived.
 		</gsm>
 	</provider>
 	<provider>
+		<name>DIGI BE</name>
+		<gsm>
+			<network-id mcc="206" mnc="12"/>
+			<apn value="web">
+				<usage type="internet"/>
+				<name>DIGI Web</name>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
 		<name>Neibo</name>
 		<gsm>
 			<network-id mcc="206" mnc="10"/>
