@@ -767,13 +767,16 @@ conceived.
 <country code="au">
 	<name>Australia</name>
 	<provider>
-		<name>Aldi Mobile AU</name>
-		<!-- https://www.aldimobile.com.au/blogs/using-and-managing-your-service/what-are-the-data-internet-settings-for-my-aldimobile-service -->
+		<name>ALDImobile</name>
 		<gsm>
 			<network-id mcc="505" mnc="01"/>
+			<apn value="telstra.internet">
+				<usage type="internet"/>
+				<name>ALDI Internet</name>
+			</apn>
 			<apn value="mdata.net.au">
 				<usage type="mms"/>
-				<name>Mobile Data</name>
+				<name>ALDI MMS</name>
 				<mmsc>http://mmsc.mdata.net.au:8003</mmsc>
 				<mmsproxy>10.1.1.180</mmsproxy>
 			</apn>
