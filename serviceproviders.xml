@@ -13539,10 +13539,12 @@ conceived.
 			<apn value="fast.t-mobile.com">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
+				<protocol type="ipv4v6"/>
 				<name>T-Mobile LTE</name>
 			</apn>
 			<apn value="mobilenet">
 				<usage type="mms"/>
+				<protocol type="ipv4v6"/>
 				<name>T-Mobile MMS</name>
 				<username></username>
 				<password></password>

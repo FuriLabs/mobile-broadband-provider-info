@@ -14,6 +14,7 @@
 <!ELEMENT gsm (network-id*, msisdn-query*, voicemail*, visual-voicemail*, balance-check*, balance-top-up*, apn*)>
 <!ELEMENT apn (plan*,
                usage?,
+               protocol?,
                name*,
                gateway?,
                username?,
@@ -126,6 +127,13 @@
 
 <!ELEMENT usage EMPTY>
 <!ATTLIST usage type (internet|mms|wap|ia|mms-internet-hipri|mms-internet-hipri-fota) #REQUIRED>
+
+<!ELEMENT protocol EMPTY>
+<!ATTLIST protocol type (ip|ipv6|ipv4v6) #REQUIRED>
+<!-- IP protocol to request when activating this APN's context. If omitted,
+     the client applies its own default (historically IPv4-only). Must
+     come after usage, since some clients apply a usage-based default
+     protocol first and this element is meant to override it. -->
 
 <!ELEMENT cdma (name*,
                 username?,
