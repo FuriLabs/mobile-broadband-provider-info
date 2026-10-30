@@ -4821,6 +4821,12 @@ conceived.
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 			</apn>
+			<apn value="mms">
+				<usage type="mms"/>
+				<name>Elisa MMS</name>
+				<mmsc>http://mms.elisa.fi</mmsc>
+				<mmsproxy>213.161.41.57:80</mmsproxy>
+			</apn>
 		</gsm>
 	</provider>
 	<provider>
